@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activities.ResetPassActivity">
+
+    <RelativeLayout
+        android:id="@+id/rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_bar_menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/heart_logo" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                style="@style/testMediumThirdStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/iv_image"
+                android:text="@string/reset_new_password"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_otp"
+                style="@style/testMediumStyle"
+                android:layout_below="@+id/tv_msg"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/otp" />
+
+            <ImageView
+                android:id="@+id/iv_otp"
+                style="@style/imageStyle_3"
+                android:layout_below="@+id/tv_otp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_mail"
+                tools:ignore="VectorDrawableCompat" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_otp"
+                style="@style/editTextstyle"
+                android:layout_below="@+id/tv_otp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:layout_toEndOf="@+id/iv_otp"
+                android:layout_marginStart="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                style="@style/testMediumStyle"
+                android:layout_below="@+id/ed_otp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/new_pass" />
+
+            <ImageView
+                android:id="@+id/iv_password"
+                style="@style/imageStyle_3"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_lock" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_password"
+                style="@style/editTextstyle"
+                android:layout_below="@+id/tv_password"
+                android:layout_toEndOf="@+id/iv_password"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tv_conf_password"
+                style="@style/testMediumStyle"
+                android:layout_below="@+id/ed_password"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/confirm_password" />
+
+
+            <ImageView
+                android:id="@+id/iv_conf_password"
+                style="@style/imageStyle_3"
+                android:layout_below="@+id/tv_conf_password"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_lock" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_conf_password"
+                style="@style/editTextstyle"
+                android:layout_below="@+id/tv_conf_password"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:layout_toEndOf="@+id/iv_password"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:id="@+id/lv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_conf_password"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    style="@style/testStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/stroke_color"
+                    android:text="@string/not_receivedcode"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_resend"
+                    style="@style/testHeadingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/resend"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/buttonStyle"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/lv_main"
+                android:text="@string/submit" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

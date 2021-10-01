@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.PaymentActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/card_no"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/testMediumFivthStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="Loyal 2 Number"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/shop_note"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/testMediumFivthStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="Write Note"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/payment"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_credit_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_payment_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/card_img" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_view_paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/selector_payment_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/paypal_img" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/testMediumThirdStyle"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/card_detail"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_card_number"
+                    style="@style/editTextstyle"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:hint="@string/card_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_expery_date"
+                        style="@style/editTextstyle"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_box_with_gray"
+                        android:hint="@string/mm_yy"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="5" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_cvc"
+                        style="@style/editTextstyle"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_box_with_gray"
+                        android:hint="@string/cvc"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/save_my_card"
+                    android:textColor="#8B8B8B"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/buttonStyle"
+                android:layout_margin="25dp"
+                android:text="@string/submit"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

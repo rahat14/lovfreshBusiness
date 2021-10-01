@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_img"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.NotificationActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/auto_vendor_search"
+            style="@style/editTextstyle"
+            android:layout_margin="15dp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bg_red_and_white_box"
+            android:hint="@string/search"
+            android:inputType="textCapSentences" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/auto_vendor_search"
+            android:layout_margin="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_notification_store" />
+
+
+        <include layout="@layout/no_data_found_layout" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

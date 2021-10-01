@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.fruitvendorapp",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 103,
+      "versionName": "1.1.102x",
+      "outputFile": "lovfresh_business_1.1.102x_103_13-09-21_release.apk"
+    }
+  ],
+  "elementType": "File"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activities.FilterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white">
+
+        <include layout="@layout/toolbar_bar_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/auto_product_search"
+                style="@style/editTextstyle"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_red_and_white_box"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:hint="@string/search_hint"
+                android:inputType="textCapSentences" />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/testsecondStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/price_range"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/sb_price"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:maxWidth="25dp"
+                android:max="1000"
+                android:min="0"
+                android:progress="10" />
+
+            <TextView
+                android:id="@+id/tv_prices"
+                style="@style/testMediumThirdStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:text="$0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_filter_box"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_by_category"
+                        app:drawableStartCompat="@drawable/ic_category"
+                        android:drawablePadding="10dp"/>
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/sp_category"
+                        style="@style/testStyle"
+                        android:gravity="left"
+                        android:inputType="textCapSentences"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginStart="13dp"
+                        android:prompt="@string/all_category"/>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/tv_category"
+                        style="@style/testStyle"
+                        android:text="@string/all_category"
+                        android:gravity="left"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginStart="13dp"
+                        />
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_clear"
+                style="@style/testStyle"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_clear_filter"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:text="Clear Filters"
+                app:drawableStartCompat="@drawable/ic_white_clear" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_special_product_list" />
+
+            <include
+                layout="@layout/content_not_product_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

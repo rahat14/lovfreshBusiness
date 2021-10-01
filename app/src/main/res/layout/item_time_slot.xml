@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/testStyle"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:text="Same Day"
+        android:textColor="@color/black" />
+    <RadioButton
+        android:id="@+id/rb_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonTint="@color/colorAccent"
+        android:layout_marginEnd="20dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:visibility="gone"
+        android:id="@+id/sc_select"
+        app:buttonTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:checked="true" />
+</LinearLayout>

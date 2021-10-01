@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\AndroidStudioProjects\\keystores\\lovfresh\\lovfresh_business.jks')
+            storePassword 'lovfresh123#'
+            keyAlias 'lovfresh_business'
+            keyPassword 'lovfresh123#'
+        }
+    }
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "com.fruitvendorapp"
+        minSdkVersion 19
+        targetSdkVersion 31
+        versionCode 104 //prev 103
+        versionName "1.1.105" //prev 1.1.102x
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    renameAPK(applicationVariants, defaultConfig)
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+}
+
+def renameAPK(applicationVariants, defaultConfig) {
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def formattedDate = new Date().format('dd-MM-yy')
+            outputFileName = "lovfresh_business_" + defaultConfig.versionName + "_" + defaultConfig.versionCode + "_" + formattedDate + "_" + variant.name + ".apk"
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.0-alpha03'
+    implementation 'com.google.android.material:material:1.5.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.hbb20:ccp:2.3.7'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'pub.devrel:easypermissions:2.0.1'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.github.clans:fab:1.6.2'
+    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.github.gratusik:AGIKSwipeButton:1.0.1'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'io.sentry:sentry-android:4.3.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+}

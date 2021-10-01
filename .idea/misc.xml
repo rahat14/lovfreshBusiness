@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/activity_order_detail_deliver_popup.xml" value="0.24139492753623187" />
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/activity_order_notification_popup.xml" value="0.2586050724637681" />
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/activity_spalsh.xml" value="0.21467391304347827" />
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/item_or_list.xml" value="0.24818840579710144" />
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/order_detail_popup.xml" value="0.20471014492753623" />
+        <entry key="..\:/AndroidStudioProjects/Avik Projects/NEW_/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/activity_login.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/Rezwan/Downloads/Compressed/NEW_/Lovfresh_Business/LovFresh_Vendor/app/src/main/res/layout/activity_add_promo_code.xml" value="0.16473259334006055" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

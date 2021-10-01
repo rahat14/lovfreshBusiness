@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activities.PickAPlanActivity">
+
+    <RelativeLayout
+        android:id="@+id/rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <include layout="@layout/toolbar_bar_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                style="@style/testsecondStyle"
+                android:text="@string/choose_plan"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/testsecondStyle"
+                android:text="@string/plan_detail"
+                android:textColor="@color/colortextAccent"
+                android:layout_marginTop="10dp"
+               />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_pick_plan" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

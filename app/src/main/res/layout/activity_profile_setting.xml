@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activities.ProfileSettingActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:minHeight="160dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_holder_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner_img"
+                    app:riv_corner_radius="5dp" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <TextView
+                    android:id="@+id/iv_add_banner"
+                    style="@style/testMediumStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/white"
+                    android:padding="5dp"
+                    android:text="@string/add_images"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_plus_circle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cmv_profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_fruit_img"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/iv_add_image"
+                    style="@style/imageStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_add_img"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_banner_view"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/testsecondStyle"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="User Name"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    app:boxStrokeColor="@color/colorAccent"
+                    app:hintTextColor="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_name"
+                        style="@style/editTextstyle"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    app:hintTextColor="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_email"
+                        style="@style/editTextstyle"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        app:ccp_areaCodeDetectedCountry="true"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="+61"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="1dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_country_code"
+                        android:background="@color/black" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/view1"
+                        android:hint="@string/phone"
+                        app:hintTextColor="@color/colorAccent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_phone"
+                            style="@style/editTextstyle"
+                            android:enabled="false"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    app:hintTextColor="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_address"
+                        style="@style/editTextstyle"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/abn_acn"
+                    app:hintTextColor="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_abn"
+                        style="@style/editTextstyle"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/website"
+                    app:hintTextColor="@color/colorAccent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_website"
+                        style="@style/editTextstyle"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_change_pas"
+                    style="@style/testHeadingNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dp"
+                    android:drawableLeft="@drawable/ic_other_s"
+                    android:drawableRight="@drawable/ic_grey_right_arrow"
+                    android:drawablePadding="@dimen/padd_10"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/change_password"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/delivery_title"
+                    style="@style/testHeadingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_margin="15dp"
+                    android:text="@string/delivery_type"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_deliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_deliver_type" />
+
+
+                <Button
+                    android:id="@+id/btn_update"
+                    style="@style/buttonStyle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/save_change"
+                    android:textAllCaps="false"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="25dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/heart_logo" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

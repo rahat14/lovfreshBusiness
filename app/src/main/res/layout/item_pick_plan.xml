@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/light_gray"
+    card_view:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_plan_name"
+            style="@style/testMediumFourthStyle"
+            android:gravity="center"
+            android:text="@string/plan_title"
+            android:textColor="@color/fill_text"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/v1"
+            style="@style/viewLineStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_plan_name"/>
+
+        <TextView
+            android:id="@+id/tv_interval"
+            style="@style/testMediumFourthStyle"
+            android:gravity="center"
+            android:layout_below="@+id/v1"
+            android:text="1 Month"
+            android:textColor="@color/stroke_color"
+            android:textSize="15sp"
+            android:textAllCaps="true"/>
+
+        <View
+            android:id="@+id/v2"
+            style="@style/viewLineStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_interval"/>
+
+
+        <TextView
+            android:id="@+id/tv_descripation"
+            style="@style/testMediumFourthStyle"
+            android:gravity="center"
+            android:layout_below="@+id/v2"
+            android:text="Lorem Ipsum"
+            android:maxLines="5"
+            android:textColor="@color/stroke_color"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/viewLineStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_descripation"/>
+
+
+        <TextView
+            android:id="@+id/tv_select"
+            style="@style/testHeadingNormalStyle"
+            android:text="Select"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

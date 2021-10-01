@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20sp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:padding="@dimen/padd_15">
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/imageStyle_4"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_clear_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_date_select"
+            style="@style/testMediumTitleStyle"
+            android:layout_margin="@dimen/padd_10"
+            android:text="@string/time_slot_t" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_time_slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_save"
+            android:layout_below="@+id/tv_date_select"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_time_slot" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/buttonStyle"
+            android:layout_width="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padd_5"
+            android:text="@string/save"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

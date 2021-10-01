@@ -1,0 +1,140 @@
+{
+  "project_info": {
+    "project_number": "440075119846",
+    "project_id": "lovfresh",
+    "storage_bucket": "lovfresh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440075119846:android:fcb5afc6a15bb795e7df27",
+        "android_client_info": {
+          "package_name": "com.fruitvendorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440075119846-5gmsmtst74l624ek49n9tb06f2ndf84b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fruitvendorapp",
+            "certificate_hash": "4cf923739d3048bb25b7c0fde8251b958087687e"
+          }
+        },
+        {
+          "client_id": "440075119846-7ap9ivlqdn1cvlf3r5jlkflt7djqm594.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fruitvendorapp",
+            "certificate_hash": "2e6da56b80fbf541feb4d053127ff30ab206b296"
+          }
+        },
+        {
+          "client_id": "440075119846-dkc4knm7dj3a3rb72rrn4sldje6g6sjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fruitvendorapp",
+            "certificate_hash": "617709c383a873d328f53f1cdcf0852b22f15e55"
+          }
+        },
+        {
+          "client_id": "440075119846-qrmqc1dn40bqulufinmujn4k8q744asd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fruitvendorapp",
+            "certificate_hash": "f1b6661aef3b51fdf233dd8b00906f968fa69b58"
+          }
+        },
+        {
+          "client_id": "440075119846-ijs9tlmj99r10a8o5mfhs3h5unqomith.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuJVHsK5ZPrlU_-myyVoDJFuNxD6O2qus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440075119846-ijs9tlmj99r10a8o5mfhs3h5unqomith.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "440075119846-1sooiah7sh6r5vsb2p8vjt082e6q4t6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.live.lovfresh",
+                "app_store_id": "1561006526"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440075119846:android:a24abf22fa3678f0e7df27",
+        "android_client_info": {
+          "package_name": "com.lovfreshuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440075119846-7jlsrvja8ve70bso512juqpq3eg7v9ba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lovfreshuser",
+            "certificate_hash": "617709c383a873d328f53f1cdcf0852b22f15e55"
+          }
+        },
+        {
+          "client_id": "440075119846-7sgl1l267hvtdvs908b1susgo2c6smb0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lovfreshuser",
+            "certificate_hash": "4cf923739d3048bb25b7c0fde8251b958087687e"
+          }
+        },
+        {
+          "client_id": "440075119846-8n78enndp3u6190nljjludrb5nomh063.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lovfreshuser",
+            "certificate_hash": "b1b2759830bd2186082515147071d2f69ffe37a4"
+          }
+        },
+        {
+          "client_id": "440075119846-ijs9tlmj99r10a8o5mfhs3h5unqomith.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuJVHsK5ZPrlU_-myyVoDJFuNxD6O2qus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440075119846-ijs9tlmj99r10a8o5mfhs3h5unqomith.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "440075119846-1sooiah7sh6r5vsb2p8vjt082e6q4t6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.live.lovfresh",
+                "app_store_id": "1561006526"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

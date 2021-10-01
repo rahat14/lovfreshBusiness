@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activities.EditProductActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginTop="10dp"
+                android:text="Upload Photo: 1920px X 1920px"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_photo_icon"
+                    app:riv_corner_radius="10dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image2"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_photo_icon"
+                    app:riv_corner_radius="10dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image3"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_photo_icon"
+                    app:riv_corner_radius="10dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image4"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_photo_icon"
+                    app:riv_corner_radius="10dp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_title"
+                style="@style/editTextstyle"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:hint="@string/title"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences" />
+
+            <RelativeLayout
+                android:id="@+id/rl_category"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toStartOf="@+id/sp_arro"
+                    android:gravity="left"
+                    android:text="@string/all_category" />
+
+                <ImageView
+                    android:id="@+id/sp_arro"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_spinner" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_descripation"
+                style="@style/editTextstyle"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:hint="@string/description"
+                android:inputType="textCapSentences" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_other_info"
+                style="@style/editTextstyle"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:hint="@string/other_information"
+                android:inputType="textCapSentences"
+                android:visibility="gone" />
+
+            <!--     <LinearLayout
+                     android:id="@+id/ll_quentity_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                     android:orientation="horizontal"
+                     android:weightSum="1">
+
+                     <EditText
+                         android:id="@+id/ed_price"
+                         style="@style/editTextstyle"
+                         android:layout_width="200dp"
+                         android:layout_weight="0.2"
+                         android:background="@drawable/bg_white_box_with_gray"
+                         android:hint="@string/price"
+                         android:inputType="number"
+                         android:textColorHint="@color/hint_color"
+                         android:textSize="15sp" />
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="45dp"
+                         android:layout_marginStart="10dp"
+                         android:layout_weight="0.8"
+                         android:background="@drawable/bg_white_box_with_gray"
+                         android:orientation="horizontal">
+
+                         <Spinner
+                             android:id="@+id/sp_unit"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_centerVertical="true"
+                             android:layout_gravity="center"
+                             android:layout_marginStart="5dp"
+                             android:layout_toStartOf="@+id/iv_arrow"
+                             android:background="@android:color/transparent"
+                             android:gravity="center"
+                             android:spinnerMode="dropdown" />
+
+                         <ImageView
+                             android:id="@+id/iv_arrow"
+                             android:layout_width="55dp"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentEnd="true"
+                             android:layout_centerVertical="true"
+                             android:layout_gravity="center"
+                             android:src="@drawable/ic_spinner" />
+
+                     </RelativeLayout>
+                 </LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/ll_quentity_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/ed_price"
+                    style="@style/editTextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:hint="@string/price"
+                    android:inputType="numberDecimal"
+
+                    android:maxLength="7"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/ed_quantity"
+                    style="@style/editTextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:hint="@string/quantity"
+
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rv_unit_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sp_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_spinner" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_stock_amt"
+                style="@style/editTextstyle"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:hint="@string/stock_amt"
+                android:inputType="numberDecimal"
+                android:maxLength="7" />
+
+            <CheckBox
+                android:id="@+id/cb_promot_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd_10"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Promotional Price"
+                android:textColor="@color/fill_text" />
+
+            <EditText
+                android:id="@+id/ed_pro_price"
+                style="@style/editTextstyle"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_box_with_gray"
+                android:hint="@string/pro_price"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/testMediumThirdStyle"
+                android:layout_marginTop="15dp"
+                android:text="Set the product as:"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_spinner" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/ed_start_date"
+                    style="@style/editTextstyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:gravity="center"
+                    android:hint="mm/dd/yyyy"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    style="@style/testMediumThirdStyle"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="To"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ed_end_date"
+                    style="@style/editTextstyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_box_with_gray"
+                    android:gravity="center"
+                    android:hint="mm/dd/yyyy"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd_20"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    style="@style/buttonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/delete"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_hide"
+                    style="@style/buttonStyle"
+                    android:layout_margin="@dimen/padd_10"
+                    android:layout_weight="1"
+                    android:text="@string/hide"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_upload"
+                style="@style/buttonStyle"
+                android:layout_marginTop="@dimen/padd_10"
+                android:layout_marginBottom="30dp"
+                android:text="@string/save"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+

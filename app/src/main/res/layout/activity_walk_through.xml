@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    tools:context=".activities.WalkThroughActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_start_view"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        style="@style/testMediumThirdStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/ic_white_arrow" />
+
+    <LinearLayout
+        android:id="@+id/ll_start_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:ci_drawable="@drawable/unselected_indicator_round"
+            app:ci_drawable_unselected="@drawable/selected_indicator_round"
+            app:ci_height="7dp"
+            app:ci_width="7dp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/buttonStyle"
+            android:layout_marginTop="20dp"
+            android:text="@string/connect"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</RelativeLayout>

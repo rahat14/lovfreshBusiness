@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.SettingActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white"
+        android:padding="@dimen/padd_15">
+
+        <TextView
+            android:id="@+id/tv_notification_s"
+            style="@style/testsecondStyle"
+            android:drawablePadding="@dimen/padd_10"
+            android:gravity="start|center_vertical"
+            android:padding="15dp"
+            android:text="@string/notification_s"
+            app:drawableEndCompat="@drawable/ic_grey_right_arrow"
+            app:drawableStartCompat="@drawable/ic_notification_black" />
+
+
+        <TextView
+            android:id="@+id/tv_other_s"
+            style="@style/testsecondStyle"
+            android:layout_below="@+id/tv_notification_s"
+            android:drawablePadding="@dimen/padd_10"
+            android:gravity="start|center_vertical"
+            android:padding="15dp"
+            android:text="@string/customer_colletion"
+            app:drawableEndCompat="@drawable/ic_grey_right_arrow"
+            app:drawableStartCompat="@drawable/ic_payment" />
+
+
+
+        <TextView
+            android:id="@+id/tv_promo_code"
+            style="@style/testsecondStyle"
+            android:layout_below="@+id/tv_other_s"
+            android:drawablePadding="@dimen/padd_10"
+            android:gravity="start|center_vertical"
+            android:padding="15dp"
+            android:text="@string/tv_promo_code"
+            app:drawableEndCompat="@drawable/ic_grey_right_arrow"
+            app:drawableStartCompat="@drawable/ic_local_offe" />
+
+        <TextView
+            android:id="@+id/tv_term_condition"
+            style="@style/testsecondStyle"
+            android:layout_below="@+id/tv_promo_code"
+            android:drawablePadding="@dimen/padd_10"
+            android:gravity="start|center_vertical"
+            android:padding="15dp"
+            android:text="@string/term_and_condi"
+            app:drawableEndCompat="@drawable/ic_grey_right_arrow"
+            app:drawableStartCompat="@drawable/ic_term_con" />
+
+
+        <TextView
+            android:id="@+id/tv_build_type"
+            style="@style/testHeadingStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/padd_20"
+            android:gravity="center"
+            android:text="30.0.3"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

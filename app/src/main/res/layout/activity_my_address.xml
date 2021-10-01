@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activities.MyAddressActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_my_address" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_nodatafound"
+                app:tint="@color/colorAccent" />
+
+
+            <TextView
+                style="@style/testStyle"
+                android:gravity="center"
+                android:text="@string/ho_ho"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                style="@style/testStyle"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/address_is_empty"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_address"
+            style="@style/buttonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="@string/add_address"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

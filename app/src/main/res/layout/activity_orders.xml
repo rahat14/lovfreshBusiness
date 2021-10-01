@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.OrdersActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/auto_search"
+            style="@style/editTextstyle"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_red_and_white_box"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:hint="@string/search_order"
+            android:inputType="textCapSentences" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_order_cate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padd_10"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/stroke_color"
+            app:tabMode="fixed"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/testHeadingStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/order_id"
+                android:textSize="12sp"
+                android:maxLines="3"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/testHeadingStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="@string/orderdate"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/testHeadingStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/status"
+                android:maxLines="3"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/testHeadingStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/slot_selected"
+                android:textSize="12sp"
+                android:maxLines="3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            style="@style/viweLineStyle"
+            android:layout_height="1sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_order_list" />
+
+        <include layout="@layout/no_data_found_layout" />
+    </LinearLayout>
+</RelativeLayout>

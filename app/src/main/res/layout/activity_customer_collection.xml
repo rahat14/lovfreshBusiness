@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.CustomerCollectionActivity">
+
+    <include layout="@layout/toolbar_bar_menu" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/delivery_title"
+            style="@style/testHeadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Delivery Type"
+            android:textSize="15sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_deliver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_deliver_type" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/buttonStyle"
+            android:layout_width="300dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</LinearLayout>

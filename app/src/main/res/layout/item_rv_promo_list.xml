@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dotted"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/padd_5"
+    android:padding="@dimen/padd_15">
+    <ImageView
+        android:id="@+id/iv_delete"
+        style="@style/imageStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_delete_box"
+        />
+
+    <TextView
+        android:id="@+id/tv_promo_code"
+        style="@style/testsecondStyle"
+        android:layout_toLeftOf="@+id/iv_delete"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOVFRESH" />
+
+    <TextView
+        android:id="@+id/tv_promo_name"
+        style="@style/testsecondStyle"
+        android:layout_below="@+id/tv_promo_code"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="HOLI OFFER"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_save_ruppes"
+        style="@style/testsecondStyle"
+        android:layout_below="@+id/tv_promo_name"
+        android:layout_width="wrap_content"
+        android:text="50"
+        android:textColor="@color/green"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

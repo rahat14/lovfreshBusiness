@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_white_box_with_gray"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/testsecondStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:text="Address: 4892  Lightning Point Drive" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_email"
+        style="@style/testsecondStyle"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_address"
+        android:layout_marginStart="15dp"
+        android:text="Email: store@domain.com"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/testsecondStyle"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginStart="15dp"
+        android:text="Phone: +00 11 22 33 44"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_edit_loc" />
+
+
+</RelativeLayout>
+
