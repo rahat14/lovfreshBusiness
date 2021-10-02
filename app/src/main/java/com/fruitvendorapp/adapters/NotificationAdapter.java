@@ -35,12 +35,13 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     private int lastSelectedPosition = 0;
     private String arraylistsize = "";
 
-    public NotificationAdapter(Context context) {
+    public NotificationAdapter(Context context, ArrayList<OrderModel> arrayList) {
         this.context = context;
+        this.arrayList = arrayList;
     }
 
     public void setData(ArrayList<OrderModel> arrayList) {
-        this.arrayList = arrayList;
+        this.arrayList.addAll(arrayList);
     }
 
     @NonNull
@@ -82,7 +83,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         }
         viewHolder.tvSlotSelected.setText("");
         if (model.getDeliverDate() != null && model.getDeliverDate().length() > 0) {
-            viewHolder.tvSlotSelected.setText(BaseUtility.convertDateFormat(model.getDeliverDate()) + "-" + BaseUtility.parseDateToddMMyyyy(model.getStartTime())+ "-" + BaseUtility.parseDateToddMMyyyy(model.getEndTime()));
+            viewHolder.tvSlotSelected.setText(BaseUtility.convertDateFormat(model.getDeliverDate()) + "-" + BaseUtility.parseDateToddMMyyyy(model.getStartTime()) + "-" + BaseUtility.parseDateToddMMyyyy(model.getEndTime()));
         }
         if (model.getVendor().getImageUrl() != null && model.getVendor().getImageUrl().length() > 0)
             Glide.with(context).load(Urls.IMAGE_URL + model.getVendor().getImageUrl()).apply(new RequestOptions().placeholder(R.drawable.blank_img).error(R.drawable.blank_img)).into(viewHolder.riShopImage);
@@ -94,7 +95,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         viewHolder.rlMainView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (model.getStatus().equals("created")){
+                if (model.getStatus().equals("created")) {
                     Intent intent1 = new Intent(context, OrderNotificationPopup.class);
                     intent1.putExtra(Constant.ORDER_ID, model.getId());
                     intent1.putExtra(Constant.FLAG, "1");
@@ -111,7 +112,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                         intent.putExtra(Constant.FLAG, "1");
                         context.startActivity(intent);
                     }
-                } }
+                }
+            }
         });
     }
 

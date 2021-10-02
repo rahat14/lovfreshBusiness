@@ -1,78 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidStudioProjects\\Avik Projects\\Lovfresh_Business\\LovFresh_Vendor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
+            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\8cef994e40aba8317bcfae94feb73e12\\transformed\\jetified-play-services-basement-17.3.0\\res\\values-bn\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "210",
-                        "endOffsets": "457"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4531",
-                        "endColumns": "210",
-                        "endOffsets": "4737"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\354c22f19628f6c7e8c77a34223aa7df\\transformed\\jetified-play-services-base-17.3.0\\res\\values-bn\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,352,543,669,778,974,1094,1232,1361,1565,1672,1859,1985,2178,2352,2438,2531",
-                        "endColumns": "106,190,125,108,195,119,137,128,203,106,186,125,192,173,85,92,114",
-                        "endOffsets": "351,542,668,777,973,1093,1231,1360,1564,1671,1858,1984,2177,2351,2437,2530,2645"
-                    },
-                    "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3391,3502,3693,3823,3936,4132,4256,4398,4742,4946,5057,5244,5374,5567,5745,5835,5932",
-                        "endColumns": "110,190,129,112,195,123,141,132,203,110,186,129,192,177,89,96,118",
-                        "endOffsets": "3497,3688,3818,3931,4127,4251,4393,4526,4941,5052,5239,5369,5562,5740,5830,5927,6046"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\e6545c856bb34cc461b593176f44921a\\transformed\\jetified-firebase-messaging-21.0.1\\res\\values-bn\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "99",
-                        "endOffsets": "306"
-                    },
-                    "to": {
-                        "startLines": "57",
-                        "startColumns": "4",
-                        "startOffsets": "6208",
-                        "endColumns": "103",
-                        "endOffsets": "6307"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\5efbd2f6314ed93c1bb5b31d73c72add\\transformed\\jetified-places-2.4.0\\res\\values-bn\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "184,253,320,413,476,525,597,674",
-                        "endColumns": "68,66,92,62,48,71,76,50",
-                        "endOffsets": "252,319,412,475,524,596,673,724"
-                    },
-                    "to": {
-                        "startLines": "106,107,108,109,110,111,112,113",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "10065,10138,10209,10306,10373,10426,10502,10583",
-                        "endColumns": "72,70,96,66,52,75,80,54",
-                        "endOffsets": "10133,10204,10301,10368,10421,10497,10578,10633"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\223f02423fafa209f6860e98bfc787fa\\transformed\\material-1.5.0-alpha03\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\223f02423fafa209f6860e98bfc787fa\\transformed\\material-1.5.0-alpha03\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,7 +23,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\354c22f19628f6c7e8c77a34223aa7df\\transformed\\jetified-play-services-base-17.3.0\\res\\values-bn\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,352,543,669,778,974,1094,1232,1361,1565,1672,1859,1985,2178,2352,2438,2531",
+                        "endColumns": "106,190,125,108,195,119,137,128,203,106,186,125,192,173,85,92,114",
+                        "endOffsets": "351,542,668,777,973,1093,1231,1360,1564,1671,1858,1984,2177,2351,2437,2530,2645"
+                    },
+                    "to": {
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3391,3502,3693,3823,3936,4132,4256,4398,4742,4946,5057,5244,5374,5567,5745,5835,5932",
+                        "endColumns": "110,190,129,112,195,123,141,132,203,110,186,129,192,177,89,96,118",
+                        "endOffsets": "3497,3688,3818,3931,4127,4251,4393,4526,4941,5052,5239,5369,5562,5740,5830,5927,6046"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\5efbd2f6314ed93c1bb5b31d73c72add\\transformed\\jetified-places-2.4.0\\res\\values-bn\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,253,320,413,476,525,597,674",
+                        "endColumns": "68,66,92,62,48,71,76,50",
+                        "endOffsets": "252,319,412,475,524,596,673,724"
+                    },
+                    "to": {
+                        "startLines": "106,107,108,109,110,111,112,113",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "10065,10138,10209,10306,10373,10426,10502,10583",
+                        "endColumns": "72,70,96,66,52,75,80,54",
+                        "endOffsets": "10133,10204,10301,10368,10421,10497,10578,10633"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,7 +74,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Rezwan\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\e6545c856bb34cc461b593176f44921a\\transformed\\jetified-firebase-messaging-21.0.1\\res\\values-bn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "57",
+                        "startColumns": "4",
+                        "startOffsets": "6208",
+                        "endColumns": "103",
+                        "endOffsets": "6307"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\8cef994e40aba8317bcfae94feb73e12\\transformed\\jetified-play-services-basement-17.3.0\\res\\values-bn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "210",
+                        "endOffsets": "457"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4531",
+                        "endColumns": "210",
+                        "endOffsets": "4737"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

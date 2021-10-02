@@ -3,6 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5b914438502fc733754499c17c0c5708/transformed/jetified-card-form-3.5.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fd67e4e96e6b272b5c4da8918091305f/transformed/jetified-card-form-3.5.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/656c1614794cd28384731a4b253961c8/transformed/jetified-card-form-3.5.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5b914438502fc733754499c17c0c5708/transformed/jetified-card-form-3.5.0/jars/classes.jar!/" />
@@ -11,6 +12,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fd67e4e96e6b272b5c4da8918091305f/transformed/jetified-card-form-3.5.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fd67e4e96e6b272b5c4da8918091305f/transformed/jetified-card-form-3.5.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fd67e4e96e6b272b5c4da8918091305f/transformed/jetified-card-form-3.5.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/656c1614794cd28384731a4b253961c8/transformed/jetified-card-form-3.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/656c1614794cd28384731a4b253961c8/transformed/jetified-card-form-3.5.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/656c1614794cd28384731a4b253961c8/transformed/jetified-card-form-3.5.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.braintreepayments/card-form/3.5.0/84fcf841b48181dd311bdea66c4f2c5dfb12e536/card-form-3.5.0-javadoc.jar!/" />

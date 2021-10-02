@@ -7,6 +7,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f589aeef66d189c01f590347ede8336e/transformed/jetified-core-2.18.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f589aeef66d189c01f590347ede8336e/transformed/jetified-core-2.18.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f589aeef66d189c01f590347ede8336e/transformed/jetified-core-2.18.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/035e4fe75c94d61c7d64f81fa985b563/transformed/jetified-core-2.18.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/035e4fe75c94d61c7d64f81fa985b563/transformed/jetified-core-2.18.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/035e4fe75c94d61c7d64f81fa985b563/transformed/jetified-core-2.18.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.braintreepayments.api/core/2.18.1/b22632c920938db3687bf564e2f6d58d200cf4f6/core-2.18.1-javadoc.jar!/" />

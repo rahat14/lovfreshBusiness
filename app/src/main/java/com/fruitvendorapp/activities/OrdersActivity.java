@@ -6,10 +6,13 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,10 +22,12 @@ import com.androidnetworking.error.ANError;
 import com.fruitvendorapp.R;
 import com.fruitvendorapp.adapters.OrderListAdapter;
 import com.fruitvendorapp.model.OrderModel;
+import com.fruitvendorapp.model.OrderResp;
 import com.fruitvendorapp.model.StoreModel;
 import com.fruitvendorapp.server_networking.JsonArrayResponseListener;
 import com.fruitvendorapp.server_networking.NetworkHelper;
 import com.fruitvendorapp.server_networking.RequestHelper;
+import com.fruitvendorapp.server_networking.ResponseListener;
 import com.fruitvendorapp.utilities.BaseUtility;
 import com.fruitvendorapp.utilities.ConnectionUtil;
 import com.fruitvendorapp.utilities.Constant;
@@ -34,6 +39,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -43,7 +49,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.sentry.Sentry;
 
-public class OrdersActivity extends AppCompatActivity implements View.OnClickListener, JsonArrayResponseListener {
+public class OrdersActivity extends AppCompatActivity implements View.OnClickListener, ResponseListener {
     private static final String TAG = OrdersActivity.class.getSimpleName();
     @BindView(R.id.tab_order_cate)
     TabLayout tabOrderCate;
@@ -61,11 +67,19 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
     EditText edSearchOrder;
     @BindView(R.id.iv_search_order)
     ImageView ivSearchOrder;
+    @BindView(R.id.progress_circular)
+    ProgressBar pbar;
     public boolean isSearchOrderVisible = false;
     private ProgressDialogUtil progressDialogUtil;
     private ArrayList<OrderModel> orderModelArrayList;
     private OrderListAdapter orderListAdapter;
     private int index = 0;
+    int currentPage = 1;
+    int totalPage = 10000;
+    int itemCount = 0;
+    boolean isScrolling = false;
+    int currentItems, totalItems, scrollOutItems;
+    LinearLayoutManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,8 +105,10 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
         ivBack.setOnClickListener(this);
         ivSearchOrder.setOnClickListener(this);
         tvToolbarTitle.setText("Orders");
-        setTabOrderCategory(index);
         setOrderProduct();
+        initScrollListener();
+        setTabOrderCategory(index);
+
 
         try {
             edSearchOrder.addTextChangedListener(new TextWatcher() {
@@ -139,11 +155,11 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if (index == 1) {
-            getVendorByPendingProductApi();
+            getVendorByPendingProductApi(1);
         } else if (index == 2) {
-            getVendorByProductApi("completed");
+            getVendorByProductApi("completed", 1);
         } else {
-            getVendorByProductApi("");
+            getVendorByProductApi("", 1);
         }
 
         tabOrderCate.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -151,13 +167,13 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
             public void onTabSelected(TabLayout.Tab tab) {
                 Log.e(TAG, String.valueOf(tab.getPosition()));
                 if (tab.getText().equals("PENDING")) {
-                    getVendorByPendingProductApi();
+                    getVendorByPendingProductApi(1);
                 } else if (tab.getText().equals("COMPLETED")) {
-                    getVendorByProductApi("completed");
+                    getVendorByProductApi("completed", 1);
                 } else if (tab.getText().equals("CANCELLED")) {
-                    getVendorByProductApi("rejected");
+                    getVendorByProductApi("rejected", 1);
                 } else {
-                    getVendorByProductApi("");
+                    getVendorByProductApi("", 1);
                 }
             }
 
@@ -173,12 +189,14 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
         });
     }
 
-    private void getVendorByPendingProductApi() {
+    private void getVendorByPendingProductApi(int page) {
         if (ConnectionUtil.isInternetOn(this)) {
-            progressDialogUtil.showDialog();
+            if (page == 1) {
+                progressDialogUtil.showDialog();
+            }
             //  if (!TextUtils.isEmpty("pending")) {
             Log.e(TAG, Urls.ORDER_URL + "?pending_status=" + "pending");
-            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL + "?pending_status=" + "pending", this);
+            RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL + "?pending_status=" + "pending" + "&page_size=10&page=" + page, this);
 //            } else {
 //                Log.e(TAG, Urls.CREATE_ORDER_URL + "?pending_status=" + "pending");
 //                RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.CREATE_ORDER_URL, this);
@@ -207,9 +225,9 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
 
 
     private void setOrderProduct() {
-        LinearLayoutManager manager = new LinearLayoutManager(this);
+        manager = new LinearLayoutManager(this);
         manager.setOrientation(RecyclerView.VERTICAL);
-        orderListAdapter = new OrderListAdapter(this);
+        orderListAdapter = new OrderListAdapter(this, new ArrayList<>());
         rvMyOrder.setAdapter(orderListAdapter);
         rvMyOrder.setLayoutManager(manager);
     }
@@ -233,15 +251,17 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    private void getVendorByProductApi(String status) {
+    private void getVendorByProductApi(String status, int page) {
         if (ConnectionUtil.isInternetOn(this)) {
-            progressDialogUtil.showDialog();
+            if (page == 1) {
+                progressDialogUtil.showDialog();
+            }
             if (!TextUtils.isEmpty(status)) {
-                Log.e(TAG, Urls.ORDER_URL + "?status=" + status);
-                RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL + "?status=" + status, this);
+
+                RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL + "?status=" + status + "&page_size=10&page=" + page + "&page_size=10&page=" + page, this);
 
             } else {
-                RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL, this);
+                RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.BASE_URL + "v2/orders?page_size=10&page=" + page, this);
             }
         } else {
             BaseUtility.toastMsg(this, getString(R.string.no_internet_connection));
@@ -250,20 +270,33 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
 
     }
 
+
     @Override
-    public void onSuccess(int requestCode, JSONArray json) {
+    public void onSuccess(int requestCode, JSONObject json) {
         switch (requestCode) {
             case NetworkHelper.REQ_CODE_GET_ORDER:
-                progressDialogUtil.dismissDialog();
+
+                if (currentPage == 1) {
+                    progressDialogUtil.dismissDialog();
+                }
+                // progressDialogUtil.dismissDialog();
+                pbar.setVisibility(View.GONE);
                 Log.e(TAG, json.toString());
                 GsonBuilder gsonBuilder = new GsonBuilder();
                 Gson gson = gsonBuilder.create();
-                Type orderType = new TypeToken<List<OrderModel>>() {
-                }.getType();
-                orderModelArrayList = gson.fromJson(json.toString(), orderType);
+                OrderResp orderObj = gson.fromJson(json.toString(), OrderResp.class);
+                orderModelArrayList = (ArrayList<OrderModel>) orderObj.getData().getResults();
+
+
+               // Toast.makeText(getApplicationContext(), "Size " + orderModelArrayList.size(), Toast.LENGTH_SHORT).show();
                 if (orderModelArrayList != null && !orderModelArrayList.isEmpty()) {
-                    orderListAdapter.setData(orderModelArrayList);
+                    // Toast.makeText(getApplicationContext() , "Size " + orderModelArrayList.size() , Toast.LENGTH_SHORT).show();
+                    currentPage = orderObj.getMeta().getCurrent_page();
+                    totalPage = orderObj.getMeta().getTotal();
+
+                    orderListAdapter.addData(orderModelArrayList);
                     orderListAdapter.notifyDataSetChanged();
+
                     llNoFound.setVisibility(View.GONE);
                     rvMyOrder.setVisibility(View.VISIBLE);
                 } else {
@@ -277,5 +310,62 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onError(ANError anError) {
         progressDialogUtil.dismissDialog();
+        Log.d(TAG, "onError: " + anError.getErrorDetail());
+        Toast.makeText(getApplicationContext(), " Error : " + anError.getErrorDetail() , Toast.LENGTH_SHORT).show();
+    }
+
+    private void loadMore() {
+        if (currentPage != totalPage) {
+            pbar.setVisibility(View.VISIBLE);
+            if (index == 1) {
+                getVendorByPendingProductApi(currentPage + 1);
+            } else if (index == 2) {
+                getVendorByProductApi("completed", currentPage + 1);
+            } else {
+                getVendorByProductApi("", currentPage + 1);
+            }
+
+            isScrolling = false;
+
+        } else {
+            isScrolling = false;
+            Toast.makeText(getApplicationContext(), "You Are At The Last Page", Toast.LENGTH_SHORT).show();
+        }
+
+
+    }
+
+
+    private void initScrollListener() {
+
+
+        rvMyOrder.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+                if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
+                    isScrolling = true;
+                }
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                if (dy > 0) { // scroll down
+                    currentItems = manager.getChildCount();
+                    totalItems = manager.getItemCount();
+                    scrollOutItems = manager.findFirstVisibleItemPosition();
+
+                    if (isScrolling && (currentItems + scrollOutItems == totalItems)) {
+                        isScrolling = false;
+                        loadMore();
+                    }
+                }
+
+
+            }
+        });
+
+
     }
 }

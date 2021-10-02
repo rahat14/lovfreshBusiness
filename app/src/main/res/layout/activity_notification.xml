@@ -28,15 +28,31 @@
             android:hint="@string/search"
             android:inputType="textCapSentences" />
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_store"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/auto_vendor_search"
-            android:layout_margin="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="4"
-            tools:listitem="@layout/item_notification_store" />
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:visibility="visible" />
+    </FrameLayout>
+
 
 
         <include layout="@layout/no_data_found_layout" />

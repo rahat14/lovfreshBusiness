@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
@@ -36,6 +37,7 @@ public class OrdersActivity_ViewBinding implements Unbinder {
     target.tvNoRecord = Utils.findRequiredViewAsType(source, R.id.tv_no_data, "field 'tvNoRecord'", TextView.class);
     target.edSearchOrder = Utils.findRequiredViewAsType(source, R.id.auto_search, "field 'edSearchOrder'", EditText.class);
     target.ivSearchOrder = Utils.findRequiredViewAsType(source, R.id.iv_search_order, "field 'ivSearchOrder'", ImageView.class);
+    target.pbar = Utils.findRequiredViewAsType(source, R.id.progress_circular, "field 'pbar'", ProgressBar.class);
   }
 
   @Override
@@ -53,5 +55,6 @@ public class OrdersActivity_ViewBinding implements Unbinder {
     target.tvNoRecord = null;
     target.edSearchOrder = null;
     target.ivSearchOrder = null;
+    target.pbar = null;
   }
 }

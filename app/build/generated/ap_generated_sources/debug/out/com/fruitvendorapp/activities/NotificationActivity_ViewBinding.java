@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
@@ -35,6 +36,7 @@ public class NotificationActivity_ViewBinding implements Unbinder {
     target.edVendorSearch = Utils.findRequiredViewAsType(source, R.id.auto_vendor_search, "field 'edVendorSearch'", EditText.class);
     target.llNoFound = Utils.findRequiredViewAsType(source, R.id.ll_no_data, "field 'llNoFound'", LinearLayout.class);
     target.tvNoRecord = Utils.findRequiredViewAsType(source, R.id.tv_no_data, "field 'tvNoRecord'", TextView.class);
+    target.pbar = Utils.findRequiredViewAsType(source, R.id.progress_circular, "field 'pbar'", ProgressBar.class);
   }
 
   @Override
@@ -51,5 +53,6 @@ public class NotificationActivity_ViewBinding implements Unbinder {
     target.edVendorSearch = null;
     target.llNoFound = null;
     target.tvNoRecord = null;
+    target.pbar = null;
   }
 }

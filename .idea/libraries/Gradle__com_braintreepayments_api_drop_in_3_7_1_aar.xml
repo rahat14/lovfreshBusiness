@@ -3,6 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3633a2a44e6d239ae7590bd8513889eb/transformed/jetified-drop-in-3.7.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f3a9bdf3f1824efa7d2bac39177078d3/transformed/jetified-drop-in-3.7.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/72ff6ffbd974842ac78a14a5ebf88995/transformed/jetified-drop-in-3.7.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3633a2a44e6d239ae7590bd8513889eb/transformed/jetified-drop-in-3.7.1/jars/classes.jar!/" />
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f3a9bdf3f1824efa7d2bac39177078d3/transformed/jetified-drop-in-3.7.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3a9bdf3f1824efa7d2bac39177078d3/transformed/jetified-drop-in-3.7.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3a9bdf3f1824efa7d2bac39177078d3/transformed/jetified-drop-in-3.7.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/72ff6ffbd974842ac78a14a5ebf88995/transformed/jetified-drop-in-3.7.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/72ff6ffbd974842ac78a14a5ebf88995/transformed/jetified-drop-in-3.7.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/72ff6ffbd974842ac78a14a5ebf88995/transformed/jetified-drop-in-3.7.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.braintreepayments.api/drop-in/3.7.1/7cb198c4a0c18bb638a110db3d6f4e98a6b94e2e/drop-in-3.7.1-javadoc.jar!/" />

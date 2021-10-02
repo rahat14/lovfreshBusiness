@@ -507,6 +507,8 @@ public class RequestHelper {
 
 
     public static void getRequestWithToken(final int requestCode, final Context context, String url, final ResponseListener responseListener) {
+
+        Log.d(TAG, "getRequestWithToken: " + url);
         AndroidNetworking.get(url)
                 .setPriority(Priority.HIGH)
                 .addHeaders("Content-Type", "application/json")
@@ -530,6 +532,7 @@ public class RequestHelper {
 
 
     public static void getRequestWithJSonArrayToken(final int requestCode, final Context context, String url, final JsonArrayResponseListener jsonArrayResponseListener) {
+        Log.d(TAG, "getRequestWithJSonArrayToken: " + url );
         AndroidNetworking.get(url)
                 .setPriority(Priority.HIGH)
                 .addHeaders("Content-Type", "application/json")

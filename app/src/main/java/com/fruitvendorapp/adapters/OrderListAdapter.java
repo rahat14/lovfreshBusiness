@@ -29,16 +29,21 @@ import butterknife.ButterKnife;
 
 public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.ViewHolder> {
     private Context context;
-    private ArrayList<OrderModel> arrayList;
+    private ArrayList<OrderModel> arrayList = new ArrayList<>();
     private ItemSelectInterface itemSelectInterface;
     private String status = "";
 
-    public OrderListAdapter(Context context) {
+    public OrderListAdapter(Context context ,ArrayList<OrderModel> arrayList ) {
         this.context = context;
+        this.arrayList = arrayList;
     }
 
     public void setData(ArrayList<OrderModel> arrayList) {
         this.arrayList = arrayList;
+    }
+
+    public void addData(ArrayList<OrderModel> arrayList) {
+        this.arrayList.addAll(arrayList);
     }
 
     @NonNull
