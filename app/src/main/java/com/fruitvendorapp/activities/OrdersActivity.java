@@ -155,10 +155,16 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if (index == 1) {
-            getVendorByPendingProductApi(1);
+            clearDataAdapter();
+            getVendorByProductApi("pending" , 1);
         } else if (index == 2) {
+            clearDataAdapter();
             getVendorByProductApi("completed", 1);
+        }else if (index == 3) {
+            clearDataAdapter();
+            getVendorByProductApi("rejected", currentPage + 1);
         } else {
+            clearDataAdapter();
             getVendorByProductApi("", 1);
         }
 
@@ -167,12 +173,16 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
             public void onTabSelected(TabLayout.Tab tab) {
                 Log.e(TAG, String.valueOf(tab.getPosition()));
                 if (tab.getText().equals("PENDING")) {
-                    getVendorByPendingProductApi(1);
+                    clearDataAdapter();
+                    getVendorByProductApi( "pending", 1);
                 } else if (tab.getText().equals("COMPLETED")) {
+                    clearDataAdapter();
                     getVendorByProductApi("completed", 1);
                 } else if (tab.getText().equals("CANCELLED")) {
+                    clearDataAdapter();
                     getVendorByProductApi("rejected", 1);
                 } else {
+                    clearDataAdapter();
                     getVendorByProductApi("", 1);
                 }
             }
@@ -187,6 +197,13 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
 
             }
         });
+    }
+
+    private void clearDataAdapter() {
+
+        currentPage = 1 ;
+        orderListAdapter.setData(new ArrayList<>());
+        orderListAdapter.notifyDataSetChanged();
     }
 
     private void getVendorByPendingProductApi(int page) {
@@ -258,7 +275,7 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
             }
             if (!TextUtils.isEmpty(status)) {
 
-                RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.ORDER_URL + "?status=" + status + "&page_size=10&page=" + page + "&page_size=10&page=" + page, this);
+                RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.BASE_URL + "v2/orders?status=" + status + "&page_size=10&page=" + page, this);
 
             } else {
                 RequestHelper.getRequestWithToken(NetworkHelper.REQ_CODE_GET_ORDER, this, Urls.BASE_URL + "v2/orders?page_size=10&page=" + page, this);
@@ -317,11 +334,15 @@ public class OrdersActivity extends AppCompatActivity implements View.OnClickLis
     private void loadMore() {
         if (currentPage != totalPage) {
             pbar.setVisibility(View.VISIBLE);
-            if (index == 1) {
-                getVendorByPendingProductApi(currentPage + 1);
-            } else if (index == 2) {
+         int   indexs = tabOrderCate.getSelectedTabPosition() ;
+            if (indexs == 1) {
+                getVendorByProductApi( "pending", currentPage + 1);
+            } else if (indexs == 2) {
                 getVendorByProductApi("completed", currentPage + 1);
-            } else {
+            }  else if (indexs == 3) {
+                getVendorByProductApi("rejected", currentPage + 1);
+            }
+            else {
                 getVendorByProductApi("", currentPage + 1);
             }
 

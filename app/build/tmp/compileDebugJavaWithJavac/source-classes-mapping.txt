@@ -289,11 +289,9 @@ com/fruitvendorapp/server_networking/RequestHelper.java
 com/fruitvendorapp/activities/PromoCodeActivity.java
  com.fruitvendorapp.activities.PromoCodeActivity
  com.fruitvendorapp.activities.PromoCodeActivity$1
-com/fruitvendorapp/activities/OrdersActivity.java
- com.fruitvendorapp.activities.OrdersActivity
- com.fruitvendorapp.activities.OrdersActivity$1
- com.fruitvendorapp.activities.OrdersActivity$2
- com.fruitvendorapp.activities.OrdersActivity$3
+com/fruitvendorapp/activities/NotificationActivity.java
+ com.fruitvendorapp.activities.NotificationActivity
+ com.fruitvendorapp.activities.NotificationActivity$1
 com/fruitvendorapp/activities/MyAddressActivity.java
  com.fruitvendorapp.activities.MyAddressActivity
  com.fruitvendorapp.activities.MyAddressActivity$1
@@ -433,13 +431,15 @@ com/fruitvendorapp/adapters/NotificationAdapter.java
  com.fruitvendorapp.adapters.NotificationAdapter
  com.fruitvendorapp.adapters.NotificationAdapter$1
  com.fruitvendorapp.adapters.NotificationAdapter$ViewHolder
-com/fruitvendorapp/fragments/MyProfileFragment.java
- com.fruitvendorapp.fragments.MyProfileFragment
+com/fruitvendorapp/activities/DashboardActivity.java
+ com.fruitvendorapp.activities.DashboardActivity
 com/fruitvendorapp/activities/OrderRejectionActivity.java
  com.fruitvendorapp.activities.OrderRejectionActivity
  com.fruitvendorapp.activities.OrderRejectionActivity$1
-com/fruitvendorapp/activities/NotificationActivity.java
- com.fruitvendorapp.activities.NotificationActivity
- com.fruitvendorapp.activities.NotificationActivity$1
-com/fruitvendorapp/activities/DashboardActivity.java
- com.fruitvendorapp.activities.DashboardActivity
+com/fruitvendorapp/fragments/MyProfileFragment.java
+ com.fruitvendorapp.fragments.MyProfileFragment
+com/fruitvendorapp/activities/OrdersActivity.java
+ com.fruitvendorapp.activities.OrdersActivity
+ com.fruitvendorapp.activities.OrdersActivity$1
+ com.fruitvendorapp.activities.OrdersActivity$2
+ com.fruitvendorapp.activities.OrdersActivity$3
