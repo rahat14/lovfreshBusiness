@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Null-_-\\Desktop\\lovfreshBusiness-dev\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "166",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "334"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-v16\\values-v16.xml",
+                    "source": "E:\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -40,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\72ff6ffbd974842ac78a14a5ebf88995\\transformed\\jetified-drop-in-3.7.1\\res\\values-v16\\values-v16.xml",
+                    "source": "E:\\.gradle\\caches\\transforms-3\\bfa2bf065563d65b8cd5eebfa84e56c6\\transformed\\jetified-drop-in-3.7.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2,6,15",
                         "startColumns": "4,4,4",
@@ -56,6 +37,25 @@
                         "endLines": "10,19,30",
                         "endColumns": "12,12,12",
                         "endOffsets": "529,1022,1627"
+                    }
+                },
+                {
+                    "source": "E:\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "166",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "334"
                     }
                 }
             ]

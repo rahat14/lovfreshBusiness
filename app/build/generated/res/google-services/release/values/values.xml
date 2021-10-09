@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">440075119846-ijs9tlmj99r10a8o5mfhs3h5unqomith.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">440075119846</string>
+    <string name="google_api_key" translatable="false">AIzaSyCuJVHsK5ZPrlU_-myyVoDJFuNxD6O2qus</string>
+    <string name="google_app_id" translatable="false">1:440075119846:android:fcb5afc6a15bb795e7df27</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCuJVHsK5ZPrlU_-myyVoDJFuNxD6O2qus</string>
+    <string name="google_storage_bucket" translatable="false">lovfresh.appspot.com</string>
+    <string name="project_id" translatable="false">lovfresh</string>
+</resources>

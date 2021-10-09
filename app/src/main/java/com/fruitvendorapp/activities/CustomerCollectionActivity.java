@@ -1,7 +1,6 @@
 package com.fruitvendorapp.activities;
 
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -122,7 +121,12 @@ public class CustomerCollectionActivity extends AppCompatActivity implements Vie
             if (json.length() > 0) {
                 Type deliverType = new TypeToken<List<DeliveryType>>() {
                 }.getType();
+
+
                 deliveryTypesList = gson.fromJson(json.toString(), deliverType);
+
+              //  Toast.makeText(getApplicationContext(), "ID " + deliveryTypesList.get(0).getId(), Toast.LENGTH_LONG).show();
+
                 if (deliveryTypesList != null && !deliveryTypesList.isEmpty()) {
                     deliverTypeAdapter.setData(deliveryTypesList);
                     deliverTypeAdapter.notifyDataSetChanged();

@@ -20,7 +20,6 @@ import java.util.List;
 public class NetworkHelper {
 
 
-    private static final String TAG = NetworkHelper.class.getSimpleName();
     public static final int REQ_CODE_LOGIN = 1;
     public static final int REQ_CODE_SIGN_UP = 2;
     public static final int REQ_CODE_VERIFY = 3;
@@ -83,6 +82,7 @@ public class NetworkHelper {
     public static final int REQ_CODE_GET_SAVE_DIST_AND_FEE = 60;
     public static final int REQ_CODE_GET_NOTIFICATION_COUNT = 61;
     public static final int REQ_CODE_GET_PRODUCTS = 62;
+    private static final String TAG = NetworkHelper.class.getSimpleName();
     private String userId = "";
     private String userName = "", fcmToken = "";
     private Context mContext;
@@ -471,7 +471,7 @@ public class NetworkHelper {
             object.putOpt(Constant.START_TIME, start_time);
             object.putOpt(Constant.END_TIME, end_time);
             object.putOpt(Constant.TYPE, type);
-            object.putOpt("delivery_type", type);
+            object.putOpt("delivery_type", Integer.parseInt(new SessionManager(mContext).GetDeliverAddress()));
 
             Log.e(TAG, object + "");
         } catch (JSONException e) {
@@ -485,6 +485,7 @@ public class NetworkHelper {
         try {
             object.putOpt(Constant.DATE, date);
             object.putOpt(Constant.DATE_TYPE, date_type);
+            object.putOpt("delivery_type", Integer.parseInt(new SessionManager(mContext).GetDeliverAddress()));
             Log.e(TAG, object + "");
         } catch (JSONException e) {
             e.printStackTrace();

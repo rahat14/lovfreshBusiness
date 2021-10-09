@@ -4,12 +4,17 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/AndroidManifest.xml" />
+      <root url="file://E:/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/AndroidManifest.xml" />
+      <root url="jar://E:/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/jars/classes.jar!/" />
+      <root url="file://E:/.gradle/caches/transforms-3/63243cae2900c79bde5f1ad749baa6ae/transformed/jetified-ccp-2.3.7/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hbb20/ccp/2.3.7/e348a2ed903f81e5da6e2c767abfc545614c20b8/ccp-2.3.7-javadoc.jar!/" />
+      <root url="jar://E:/.gradle/caches/modules-2/files-2.1/com.hbb20/ccp/2.3.7/e348a2ed903f81e5da6e2c767abfc545614c20b8/ccp-2.3.7-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hbb20/ccp/2.3.7/eda298e6bc63dcb881693a6fb2caff7968a3bbe0/ccp-2.3.7-sources.jar!/" />
+      <root url="jar://E:/.gradle/caches/modules-2/files-2.1/com.hbb20/ccp/2.3.7/eda298e6bc63dcb881693a6fb2caff7968a3bbe0/ccp-2.3.7-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -18,8 +18,8 @@ android {
         applicationId "com.fruitvendorapp"
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 104 //prev 103
-        versionName "1.1.105" //prev 1.1.102x
+        versionCode 105 //prev 103
+        versionName "1.1.106" //prev 1.1.102x
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,7 +29,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+          //  signingConfig signingConfigs.release
         }
     }
     compileOptions {

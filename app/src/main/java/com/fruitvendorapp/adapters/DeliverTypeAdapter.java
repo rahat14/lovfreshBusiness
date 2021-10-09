@@ -17,6 +17,7 @@ import com.fruitvendorapp.R;
 import com.fruitvendorapp.activities.AdditionalSettingActivity;
 import com.fruitvendorapp.model.DeliveryType;
 import com.fruitvendorapp.utilities.Constant;
+import com.fruitvendorapp.utilities.SessionManager;
 
 import java.util.ArrayList;
 
@@ -87,6 +88,7 @@ public class DeliverTypeAdapter extends RecyclerView.Adapter<DeliverTypeAdapter.
                 intent.putExtra(Constant.NAME, model.getName());
                 intent.putExtra(Constant.DELIVERY_TYPES, model.getId());
                 intent.putExtra(Constant.MINIMUM_ORDER_VALUE, model.getMinimumOrderValue());
+                new SessionManager(context).saveDeliverAddress(model.getId());
                 context.startActivity(intent);
             }
         });

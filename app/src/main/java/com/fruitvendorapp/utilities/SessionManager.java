@@ -234,4 +234,11 @@ public class SessionManager {
     }
 
 
+    public void saveDeliverAddress(String id) {
+        appPrefEditor.putString("DD", id);
+        appPrefEditor.commit();
+    }
+    public String GetDeliverAddress() {
+       return    appPref.getString("DD", "");
+    }
 }

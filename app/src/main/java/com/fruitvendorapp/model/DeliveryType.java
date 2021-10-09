@@ -14,6 +14,9 @@ public class DeliveryType implements Parcelable {
     @SerializedName("minimum_order_value")
     private String minimumOrderValue;
 
+    @SerializedName("delivery_type")
+    private String delivery_type;
+
     private boolean isSelected = false;
 
     public boolean isSelected() {
@@ -27,6 +30,35 @@ public class DeliveryType implements Parcelable {
     public DeliveryType(String id, Boolean isActive) {
         this.id = id;
         this.isActive = isActive;
+    }
+
+    public DeliveryType(String id, String name, Boolean isActive, String minimumOrderValue, String delivery_type, boolean isSelected) {
+        this.id = id;
+        this.name = name;
+        this.isActive = isActive;
+        this.minimumOrderValue = minimumOrderValue;
+        this.delivery_type = delivery_type;
+        this.isSelected = isSelected;
+    }
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
+    }
+
+    public String getDelivery_type() {
+        return delivery_type;
+    }
+
+    public void setDelivery_type(String delivery_type) {
+        this.delivery_type = delivery_type;
+    }
+
+    public static Creator<DeliveryType> getCREATOR() {
+        return CREATOR;
     }
 
     public void setOn_off_flag(Boolean isActive) {

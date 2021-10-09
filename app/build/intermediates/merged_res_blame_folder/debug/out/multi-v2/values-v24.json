@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\Null-_-\\Desktop\\lovfreshBusiness-dev\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\223f02423fafa209f6860e98bfc787fa\\transformed\\material-1.5.0-alpha03\\res\\values-v24\\values-v24.xml",
+                    "source": "E:\\.gradle\\caches\\transforms-3\\223f02423fafa209f6860e98bfc787fa\\transformed\\material-1.5.0-alpha03\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\396f54cb2503693f80ac503191b00000\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "E:\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "E:\\.gradle\\caches\\transforms-3\\396f54cb2503693f80ac503191b00000\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -37,16 +47,6 @@
                         "startOffsets": "1547,1613,1674,1740",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "1608,1669,1735,1802"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

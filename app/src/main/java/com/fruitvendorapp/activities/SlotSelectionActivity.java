@@ -31,6 +31,7 @@ import com.fruitvendorapp.server_networking.ResponseListener;
 import com.fruitvendorapp.utilities.BaseUtility;
 import com.fruitvendorapp.utilities.ConnectionUtil;
 import com.fruitvendorapp.utilities.ProgressDialogUtil;
+import com.fruitvendorapp.utilities.SessionManager;
 import com.fruitvendorapp.utilities.Urls;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -99,7 +100,8 @@ public class SlotSelectionActivity extends AppCompatActivity implements View.OnC
     private void getSlotSelectionApi() {
         if (ConnectionUtil.isInternetOn(this)) {
             progressDialogUtil.showDialog();
-            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL+"?delivery_type=5", this);
+            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL+"?delivery_type="+
+                    new SessionManager(getApplicationContext()).GetDeliverAddress(), this);
         } else {
             BaseUtility.toastMsg(this, getString(R.string.no_internet_connection));
         }
@@ -120,8 +122,9 @@ public class SlotSelectionActivity extends AppCompatActivity implements View.OnC
     private void postDateSlotSelectionApi(String date, String date_type) {
         if (ConnectionUtil.isInternetOn(this)) {
             progressDialogUtil.showDialog();
-            Toast.makeText(getApplicationContext() , "asdf" ,Toast.LENGTH_SHORT).show();
-            RequestHelper.PostTokenRequest(NetworkHelper.REQ_CODE_POST_SLOT_DATE, this, Urls.GET_SLOT_SETTING_URL, new NetworkHelper(this).dateJson(date, date_type), this);
+         //   Toast.makeText(getApplicationContext() , "asdf" ,Toast.LENGTH_SHORT).show();
+            RequestHelper.PostTokenRequest(NetworkHelper.REQ_CODE_POST_SLOT_DATE, this, Urls.GET_SLOT_SETTING_URL,
+                    new NetworkHelper(this).dateJson(date, date_type), this);
         } else {
             BaseUtility.toastMsg(this, getString(R.string.no_internet_connection));
         }

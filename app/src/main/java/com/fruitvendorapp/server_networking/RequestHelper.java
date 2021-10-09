@@ -330,10 +330,11 @@ public class RequestHelper {
 
     public static void PostTokenRequest(final int requestCode, final Context context, String url, JSONObject jsonObject, final ResponseListener responseListener) {
 
-        Log.d("LINK", "PostTokenRequest: "+ url);
+//        Log.d("LINK", "PostTokenRequest: "+ jsonObject.toString());
+//
+//        Map<String,Integer> params = new HashMap<String, Integer>();
+//        params.put("delivery_type",5);
 
-        Map<String,Integer> params = new HashMap<String, Integer>();
-        params.put("delivery_type",5);
 
         AndroidNetworking.post(url)
                // .addBodyParameter(params)

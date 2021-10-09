@@ -30,6 +30,7 @@ import com.fruitvendorapp.server_networking.ResponseListener;
 import com.fruitvendorapp.utilities.BaseUtility;
 import com.fruitvendorapp.utilities.ConnectionUtil;
 import com.fruitvendorapp.utilities.ProgressDialogUtil;
+import com.fruitvendorapp.utilities.SessionManager;
 import com.fruitvendorapp.utilities.Urls;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -96,7 +97,8 @@ public class PickupSlotSelectionActivity extends AppCompatActivity implements Vi
     private void getSlotSelectionApi() {
         if (ConnectionUtil.isInternetOn(this)) {
             progressDialogUtil.showDialog();
-            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL+ "?delivery_type=5", this);
+            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL+ "?delivery_type="+
+                    new SessionManager(getApplicationContext()).GetDeliverAddress(), this);
         } else {
             BaseUtility.toastMsg(this, getString(R.string.no_internet_connection));
         }
