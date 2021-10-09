@@ -96,7 +96,7 @@ public class PickupSlotSelectionActivity extends AppCompatActivity implements Vi
     private void getSlotSelectionApi() {
         if (ConnectionUtil.isInternetOn(this)) {
             progressDialogUtil.showDialog();
-            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL, this);
+            RequestHelper.getRequestWithJSonArrayToken(NetworkHelper.REQ_CODE_GET_SLOT_DATE_TIME, this, Urls.GET_SLOT_SETTING_URL+ "?delivery_type=5", this);
         } else {
             BaseUtility.toastMsg(this, getString(R.string.no_internet_connection));
         }
