@@ -17,6 +17,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RequestHelper {
     private static final String TAG = RequestHelper.class.getSimpleName();
 
@@ -326,7 +329,14 @@ public class RequestHelper {
     }
 
     public static void PostTokenRequest(final int requestCode, final Context context, String url, JSONObject jsonObject, final ResponseListener responseListener) {
+
+        Log.d("LINK", "PostTokenRequest: "+ url);
+
+        Map<String,Integer> params = new HashMap<String, Integer>();
+        params.put("delivery_type",5);
+
         AndroidNetworking.post(url)
+               // .addBodyParameter(params)
                 .addJSONObjectBody(jsonObject)
                 .addHeaders("Content-Type", "application/json")
                 .addHeaders("Authorization", "Token " + new SessionManager(context).getToken())
@@ -336,6 +346,7 @@ public class RequestHelper {
                     @Override
                     public void onResponse(JSONObject response) {
                         responseListener.onSuccess(requestCode, response);
+
                     }
 
                     @Override
@@ -508,7 +519,7 @@ public class RequestHelper {
 
     public static void getRequestWithToken(final int requestCode, final Context context, String url, final ResponseListener responseListener) {
 
-        Log.d(TAG, "getRequestWithToken: " + url);
+        Log.d(TAG, "getRequestWithToken: " + url  + "Token " + new SessionManager(context).getToken());
         AndroidNetworking.get(url)
                 .setPriority(Priority.HIGH)
                 .addHeaders("Content-Type", "application/json")
@@ -532,7 +543,7 @@ public class RequestHelper {
 
 
     public static void getRequestWithJSonArrayToken(final int requestCode, final Context context, String url, final JsonArrayResponseListener jsonArrayResponseListener) {
-        Log.d(TAG, "getRequestWithJSonArrayToken: " + url );
+        Log.d(TAG, "getRequestWithJSonArrayToken: " + url + " " + new SessionManager(context).getToken() );
         AndroidNetworking.get(url)
                 .setPriority(Priority.HIGH)
                 .addHeaders("Content-Type", "application/json")

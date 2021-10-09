@@ -56,7 +56,7 @@ public class Urls {
     public static final String PROMO_CODE_REMOVE_URL = BASE_URL + "coupons/remove/";
     public static final String IMAGE_UPDATE_URL = BASE_URL + "product/image-update/";
     public static final String NOTIFICATION_REMOVE_URL = BASE_URL + "orders/notification-remove";
-    public static final String GET_SLOT_SETTING_URL = BASE_URL + "vendor/slot-setting/";
+    public static final String GET_SLOT_SETTING_URL = BASE_URL+"v2/" + "vendor/slot-setting/";
     public static final String SEND_TWILIO_OTP_URL = TWILIO_API + "protected/json/phones/verification/start";
     public static final String VERIFY_TWILIO_OTP_URL = TWILIO_API + "protected/json/phones/verification/check";
 }

@@ -471,6 +471,8 @@ public class NetworkHelper {
             object.putOpt(Constant.START_TIME, start_time);
             object.putOpt(Constant.END_TIME, end_time);
             object.putOpt(Constant.TYPE, type);
+            object.putOpt("delivery_type", type);
+
             Log.e(TAG, object + "");
         } catch (JSONException e) {
             e.printStackTrace();
