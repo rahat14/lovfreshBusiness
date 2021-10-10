@@ -21,11 +21,7 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
-import com.braintreepayments.api.BraintreeFragment;
-import com.braintreepayments.api.DataCollector;
-import com.braintreepayments.api.dropin.DropInActivity;
-import com.braintreepayments.api.dropin.DropInRequest;
-import com.braintreepayments.api.dropin.DropInResult;
+
 import com.fruitvendorapp.R;
 import com.fruitvendorapp.server_networking.NetworkHelper;
 import com.fruitvendorapp.server_networking.RequestHelper;
@@ -343,8 +339,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     public void onBraintreeSubmit(String token) {
-        DropInRequest dropInRequest = new DropInRequest().clientToken(token);
-        startActivityForResult(dropInRequest.getIntent(this), REQUEST_CODE);
+//        DropInRequest dropInRequest = new DropInRequest().clientToken(token);
+//        startActivityForResult(dropInRequest.getIntent(this), REQUEST_CODE);
     }
 
 
@@ -353,18 +349,18 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
-                DropInResult result = data.getParcelableExtra(DropInResult.EXTRA_DROP_IN_RESULT);
-                // use the result to update your UI and send the payment method nonce to your server
-                Log.e(TAG, "DropInResult" + result.getPaymentMethodNonce().getNonce() + "");
-                //api//////////
-                postToken(result.getPaymentMethodNonce().getNonce());
+//                DropInResult result = data.getParcelableExtra(DropInResult.EXTRA_DROP_IN_RESULT);
+//                // use the result to update your UI and send the payment method nonce to your server
+//                Log.e(TAG, "DropInResult" + result.getPaymentMethodNonce().getNonce() + "");
+//                //api//////////
+//                postToken(result.getPaymentMethodNonce().getNonce());
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 // the user canceled
                 Toast.makeText(PaymentActivity.this, "Transaction cancelled", Toast.LENGTH_LONG).show();
             } else {
                 // handle errors here, an exception may be available in
-                Exception error = (Exception) data.getSerializableExtra(DropInActivity.EXTRA_ERROR);
-                Log.e(TAG, "error" + error.getMessage());
+            //    Exception error = (Exception) data.getSerializableExtra(DropInActivity.EXTRA_ERROR);
+            //    Log.e(TAG, "error" + error.getMessage());
             }
         }
     }

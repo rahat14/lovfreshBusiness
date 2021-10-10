@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Null-_-\\Desktop\\lovfreshBusiness-dev\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "E:\\.gradle\\caches\\transforms-3\\8470d10c007cc1815011545722adacbe\\transformed\\jetified-android-image-cropper-2.8.0\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\8470d10c007cc1815011545722adacbe\\transformed\\jetified-android-image-cropper-2.8.0\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "E:\\.gradle\\caches\\transforms-3\\32efa9f186174de19dc2a2ce3d621258\\transformed\\jetified-ucrop-2.2.2\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\02387e7293c4cc2034bd5c24b58d020e\\transformed\\jetified-ucrop-2.2.2\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

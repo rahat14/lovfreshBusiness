@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Null-_-\\Desktop\\lovfreshBusiness-dev\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
-                    "source": "E:\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\ffee7fb417e5762989de525458bd7264\\transformed\\core-1.7.0-alpha01\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "E:\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

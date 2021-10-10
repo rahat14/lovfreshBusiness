@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Null-_-\\Desktop\\lovfreshBusiness-dev\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "C:\\Users\\SIMEC\\AndroidStudioProjects\\DinDinn\\lovfreshBusiness-OLD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "E:\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\SIMEC\\.gradle\\caches\\transforms-3\\d63ced91748b6f35d8b2e4b01912ae8e\\transformed\\appcompat-1.4.0-alpha03\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

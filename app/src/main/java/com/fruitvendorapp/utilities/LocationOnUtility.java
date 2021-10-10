@@ -13,13 +13,6 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.HttpResponse;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.braintreepayments.api.internal.HttpClient;
 import com.fruitvendorapp.R;
 import com.fruitvendorapp.interfaces.CurrentLocationInterface;
 import com.google.android.gms.common.ConnectionResult;

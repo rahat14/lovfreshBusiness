@@ -18,8 +18,8 @@ android {
         applicationId "com.fruitvendorapp"
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 105 //prev 103
-        versionName "1.1.106" //prev 1.1.102x
+        versionCode 106 //prev 103
+        versionName "1.1.2" //prev 1.1.102x
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -67,7 +67,7 @@ dependencies {
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'com.google.android.gms:play-services-location:17.1.0'
     implementation 'com.github.clans:fab:1.6.2'
-    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+   // implementation 'com.braintreepayments.api:drop-in:3.7.1'
     implementation 'com.google.firebase:firebase-auth:19.1.0'
     implementation 'com.google.firebase:firebase-messaging:21.0.1'
     implementation 'com.android.support:multidex:1.0.3'

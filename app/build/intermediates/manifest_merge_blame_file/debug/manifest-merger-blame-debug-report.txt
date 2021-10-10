@@ -1,984 +1,942 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.fruitvendorapp"
-4    android:versionCode="105"
-5    android:versionName="1.1.106" >
+4    android:versionCode="106"
+5    android:versionName="1.1.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml
+8-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml
+9-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml
 10
 11    <queries>
-11-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:6:5-15:15
+11-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:6:5-15:15
 12        <intent>
-12-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:7:9-11:18
+12-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:7:9-11:18
 13            <action android:name="android.intent.action.GET_CONTENT" />
-13-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:8:13-72
-13-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:8:21-69
+13-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:8:13-72
+13-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:8:21-69
 14
 15            <data android:mimeType="image/*" />
-15-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:10:19-45
+15-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:10:19-45
 16        </intent>
 17        <intent>
-17-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:12:9-14:18
+17-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:12:9-14:18
 18            <action android:name="android.media.action.IMAGE_CAPTURE" />
-18-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:13:13-73
-18-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:13:21-70
+18-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:13:13-73
+18-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:13:21-70
 19        </intent>
 20    </queries>
 21
 22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:17:5-79
-22-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:17:22-76
+22-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:17:5-79
+22-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:17:22-76
 23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-23-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:18:5-81
-23-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:18:22-78
+23-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:18:5-81
+23-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:18:22-78
 24    <uses-permission android:name="android.permission.INTERNET" />
-24-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:19:5-67
-24-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:19:22-64
+24-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:19:5-67
+24-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:19:22-64
 25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-25-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:20:5-79
-25-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:20:22-76
+25-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:20:5-79
+25-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:20:22-76
 26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-26-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:21:5-80
-26-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:21:22-77
+26-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:21:5-80
+26-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:21:22-77
 27    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
-27-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:22:5-24:47
-27-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:23:9-70
+27-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:22:5-24:47
+27-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:23:9-70
 28    <uses-permission
-28-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:25:5-27:38
+28-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:25:5-27:38
 29        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-29-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:26:9-65
+29-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:26:9-65
 30        android:maxSdkVersion="31" />
-30-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:27:9-35
+30-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:27:9-35
 31    <uses-permission android:name="android.permission.CAMERA" />
-31-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:28:5-65
-31-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:28:22-62
+31-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:28:5-65
+31-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:28:22-62
 32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-32-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:29:5-82
-32-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:29:22-79
+32-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:29:5-82
+32-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:29:22-79
 33    <uses-permission android:name="android.permission.WAKE_LOCK" />
-33-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:30:5-68
-33-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:30:22-65
+33-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:30:5-68
+33-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:30:22-65
 34    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-34-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:31:5-78
-34-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:31:22-75
+34-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:31:5-78
+34-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:31:22-75
 35    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-35-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:32:5-75
-35-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:32:22-72
+35-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:32:5-75
+35-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:32:22-72
 36    <uses-permission android:name="android.permission.CALL_PHONE" />
-36-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:33:5-69
-36-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:33:22-66
+36-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:33:5-69
+36-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:33:22-66
 37
 38    <uses-feature
-38-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:35:5-37:35
+38-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:35:5-37:35
 39        android:name="android.hardware.camera"
-39-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:36:9-47
+39-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:36:9-47
 40        android:required="true" />
-40-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:37:9-32
+40-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:37:9-32
 41
 42    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-42-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:10:5-76
-42-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:10:22-73
+42-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:10:5-76
+42-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:10:22-73
 43
 44    <uses-feature
-44-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+44-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 45        android:glEsVersion="0x00020000"
-45-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+45-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
 46        android:required="true" />
-46-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+46-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 47
 48    <application
-48-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:39:5-339:19
+48-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:39:5-339:19
 49        android:name="androidx.multidex.MultiDexApplication"
 50        android:allowBackup="false"
-50-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:40:9-36
+50-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:40:9-36
 51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-51-->[androidx.core:core:1.7.0-alpha01] E:\.gradle\caches\transforms-3\ffee7fb417e5762989de525458bd7264\transformed\core-1.7.0-alpha01\AndroidManifest.xml:24:18-86
+51-->[androidx.core:core:1.7.0-alpha01] C:\Users\SIMEC\.gradle\caches\transforms-3\ffee7fb417e5762989de525458bd7264\transformed\core-1.7.0-alpha01\AndroidManifest.xml:24:18-86
 52        android:debuggable="true"
 53        android:hardwareAccelerated="true"
-53-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:41:9-43
+53-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:41:9-43
 54        android:icon="@mipmap/ic_launcher"
-54-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:42:9-43
+54-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:42:9-43
 55        android:label="@string/app_name"
-55-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:43:9-41
+55-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:43:9-41
 56        android:largeHeap="true"
-56-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:44:9-33
+56-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:44:9-33
 57        android:requestLegacyExternalStorage="true"
-57-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:45:9-52
+57-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:45:9-52
 58        android:roundIcon="@mipmap/ic_launcher"
-58-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:46:9-48
+58-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:46:9-48
 59        android:supportsRtl="true"
-59-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:47:9-35
-60        android:testOnly="true"
-61        android:theme="@style/AppTheme"
-61-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:48:9-40
-62        android:usesCleartextTraffic="true" >
-62-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:49:9-44
-63        <activity
-63-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:51:9-55:63
-64            android:name="com.fruitvendorapp.activities.AddPromoCodeActivity"
-64-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:52:13-60
-65            android:exported="true"
-65-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:53:13-36
-66            android:screenOrientation="portrait"
-66-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:54:13-49
-67            android:windowSoftInputMode="stateAlwaysHidden" />
-67-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:55:13-60
-68        <activity
-68-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:56:9-60:63
-69            android:name="com.fruitvendorapp.activities.PromoCodeActivity"
-69-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:57:13-57
-70            android:exported="true"
-70-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:58:13-36
-71            android:screenOrientation="portrait"
-71-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:59:13-49
-72            android:windowSoftInputMode="stateAlwaysHidden" />
-72-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:60:13-60
-73        <activity
-73-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:61:9-65:63
-74            android:name="com.fruitvendorapp.activities.SlotSelectionActivity"
-74-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:62:13-61
-75            android:exported="true"
-75-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:63:13-36
-76            android:screenOrientation="portrait"
-76-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:64:13-49
-77            android:windowSoftInputMode="stateAlwaysHidden" />
-77-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:65:13-60
-78        <activity
-78-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:66:9-70:63
-79            android:name="com.fruitvendorapp.activities.AdditionalSettingActivity"
-79-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:67:13-65
-80            android:exported="true"
-80-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:68:13-36
-81            android:screenOrientation="portrait"
-81-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:69:13-49
-82            android:windowSoftInputMode="stateAlwaysHidden" />
-82-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:70:13-60
-83        <activity android:name="com.fruitvendorapp.activities.FAQActivity" />
-83-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:71:9-60
-83-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:71:19-57
-84        <activity
-84-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:72:9-76:63
-85            android:name="com.fruitvendorapp.activities.NotificationSettingActivity"
-85-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:73:13-67
-86            android:exported="true"
-86-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:74:13-36
-87            android:screenOrientation="portrait"
-87-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:75:13-49
-88            android:windowSoftInputMode="stateAlwaysHidden" />
-88-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:76:13-60
-89        <activity
-89-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:77:9-81:63
-90            android:name="com.fruitvendorapp.activities.TotalCompletedOrderActivity"
-90-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:78:13-67
-91            android:exported="true"
-91-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:79:13-36
-92            android:screenOrientation="portrait"
-92-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:80:13-49
-93            android:windowSoftInputMode="stateAlwaysHidden" />
-93-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:81:13-60
-94        <activity
-94-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:82:9-86:63
-95            android:name="com.fruitvendorapp.activities.TermAndConditionActivity"
-95-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:83:13-64
-96            android:exported="true"
-96-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:84:13-36
-97            android:screenOrientation="portrait"
-97-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:85:13-49
-98            android:windowSoftInputMode="stateAlwaysHidden" />
-98-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:86:13-60
-99        <activity
-99-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:87:9-91:63
-100            android:name="com.fruitvendorapp.activities.CustomerCollectionActivity"
-100-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:88:13-66
-101            android:exported="true"
-101-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:89:13-36
-102            android:screenOrientation="portrait"
-102-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:90:13-49
-103            android:windowSoftInputMode="stateAlwaysHidden" />
-103-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:91:13-60
-104        <activity
-104-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:92:9-96:63
-105            android:name="com.fruitvendorapp.activities.EditProfileActivity"
-105-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:93:13-59
-106            android:exported="true"
-106-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:94:13-36
-107            android:screenOrientation="portrait"
-107-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:95:13-49
-108            android:windowSoftInputMode="stateAlwaysHidden" />
-108-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:96:13-60
-109        <activity
-109-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:97:9-102:63
-110            android:name="com.fruitvendorapp.popups.OrderDetailDeliverPopup"
-110-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:98:13-59
-111            android:exported="true"
-111-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:99:13-36
-112            android:screenOrientation="portrait"
-112-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:100:13-49
-113            android:theme="@style/mytheme"
-113-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:101:13-43
-114            android:windowSoftInputMode="stateAlwaysHidden" />
-114-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:102:13-60
-115        <activity
-115-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:103:9-107:63
-116            android:name="com.fruitvendorapp.activities.OrderRejectionActivity"
-116-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:104:13-62
-117            android:exported="true"
-117-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:105:13-36
-118            android:screenOrientation="portrait"
-118-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:106:13-49
-119            android:windowSoftInputMode="stateAlwaysHidden" />
-119-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:107:13-60
-120        <activity
-120-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:108:9-112:63
-121            android:name="com.fruitvendorapp.activities.VideoPlayActivity"
-121-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:109:13-57
-122            android:exported="true"
-122-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:110:13-36
-123            android:screenOrientation="portrait"
-123-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:111:13-49
-124            android:windowSoftInputMode="stateAlwaysHidden" />
-124-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:112:13-60
-125        <activity
-125-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:113:9-117:63
-126            android:name="com.fruitvendorapp.activities.ChangePasswordActivity"
-126-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:114:13-62
-127            android:exported="true"
-127-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:115:13-36
-128            android:screenOrientation="portrait"
-128-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:116:13-49
-129            android:windowSoftInputMode="stateAlwaysHidden" />
-129-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:117:13-60
-130        <activity
-130-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:118:9-122:63
-131            android:name="com.fruitvendorapp.activities.ShowWebUrlActivity"
-131-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:119:13-58
-132            android:exported="true"
-132-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:120:13-36
-133            android:screenOrientation="portrait"
-133-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:121:13-49
-134            android:windowSoftInputMode="stateAlwaysHidden" />
-134-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:122:13-60
-135        <activity
-135-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:123:9-127:63
-136            android:name="com.fruitvendorapp.activities.SettingActivity"
-136-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:124:13-55
-137            android:exported="true"
-137-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:125:13-36
-138            android:screenOrientation="portrait"
-138-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:126:13-49
-139            android:windowSoftInputMode="stateAlwaysHidden" />
-139-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:127:13-60
-140        <activity
-140-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:128:9-132:63
-141            android:name="com.fruitvendorapp.activities.TrainingActivity"
-141-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:129:13-56
-142            android:exported="true"
-142-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:130:13-36
-143            android:screenOrientation="portrait"
-143-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:131:13-49
-144            android:windowSoftInputMode="stateAlwaysHidden" />
-144-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:132:13-60
-145        <activity
-145-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:133:9-137:63
-146            android:name="com.fruitvendorapp.activities.ContactActivity"
-146-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:134:13-55
-147            android:exported="true"
-147-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:135:13-36
-148            android:screenOrientation="portrait"
-148-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:136:13-49
-149            android:windowSoftInputMode="stateAlwaysHidden" />
-149-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:137:13-60
-150        <activity
-150-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:138:9-142:63
-151            android:name="com.fruitvendorapp.activities.HelpandSupportActivity"
-151-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:139:13-62
-152            android:exported="true"
-152-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:140:13-36
-153            android:screenOrientation="portrait"
-153-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:141:13-49
-154            android:windowSoftInputMode="stateAlwaysHidden" />
-154-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:142:13-60
-155        <activity
-155-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:143:9-147:63
-156            android:name="com.fruitvendorapp.activities.EditAddressActivity"
-156-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:144:13-59
-157            android:exported="true"
-157-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:145:13-36
-158            android:screenOrientation="portrait"
-158-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:146:13-49
-159            android:windowSoftInputMode="stateAlwaysHidden" />
-159-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:147:13-60
-160        <activity
-160-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:148:9-153:63
-161            android:name="com.fruitvendorapp.popups.OrderDetailPickupPopup"
-161-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:149:13-58
-162            android:exported="true"
-162-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:150:13-36
-163            android:screenOrientation="portrait"
-163-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:151:13-49
-164            android:theme="@style/mytheme"
-164-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:152:13-43
-165            android:windowSoftInputMode="stateAlwaysHidden" />
-165-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:153:13-60
-166        <activity
-166-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:154:9-158:63
-167            android:name="com.fruitvendorapp.activities.EditProductActivity"
-167-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:155:13-59
-168            android:exported="true"
-168-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:156:13-36
-169            android:screenOrientation="portrait"
-169-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:157:13-49
-170            android:windowSoftInputMode="stateAlwaysHidden" />
-170-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:158:13-60
-171        <activity
-171-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:159:9-163:63
-172            android:name="com.fruitvendorapp.activities.FilterActivity"
-172-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:160:13-54
-173            android:exported="true"
-173-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:161:13-36
-174            android:screenOrientation="portrait"
-174-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:162:13-49
-175            android:windowSoftInputMode="stateAlwaysHidden" />
-175-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:163:13-60
-176        <activity
-176-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:164:9-174:20
-177            android:name="com.fruitvendorapp.popups.OrderNotificationPopup"
-177-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:165:13-58
-178            android:exported="true"
-178-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:166:13-36
-179            android:screenOrientation="portrait"
-179-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:167:13-49
-180            android:theme="@style/mytheme"
-180-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:168:13-43
-181            android:windowSoftInputMode="stateAlwaysHidden" >
-181-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:169:13-60
-182            <intent-filter>
-182-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:170:13-173:29
-183                <action android:name="OrderNotificationPopup" />
-183-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:171:17-65
-183-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:171:25-62
-184
-185                <category android:name="android.intent.category.DEFAULT" />
-185-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:17-76
-185-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:27-73
-186            </intent-filter>
-187        </activity>
-188        <activity
-188-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:175:9-179:63
-189            android:name="com.fruitvendorapp.activities.OrdersActivity"
-189-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:176:13-54
-190            android:exported="true"
-190-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:177:13-36
-191            android:screenOrientation="portrait"
-191-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:178:13-49
-192            android:windowSoftInputMode="stateAlwaysHidden" />
-192-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:179:13-60
-193        <activity
-193-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:180:9-184:63
-194            android:name="com.fruitvendorapp.activities.ProfileSettingActivity"
-194-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:181:13-62
-195            android:exported="true"
-195-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:182:13-36
-196            android:screenOrientation="portrait"
-196-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:183:13-49
-197            android:windowSoftInputMode="stateAlwaysHidden" />
-197-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:184:13-60
-198        <activity
-198-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:185:9-189:63
-199            android:name="com.fruitvendorapp.activities.NotificationActivity"
-199-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:186:13-60
-200            android:exported="true"
-200-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:187:13-36
-201            android:screenOrientation="portrait"
-201-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:188:13-49
-202            android:windowSoftInputMode="stateAlwaysHidden" />
-202-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:189:13-60
-203        <activity
-203-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:190:9-194:63
-204            android:name="com.fruitvendorapp.activities.ReferAFriendActivity"
-204-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:191:13-60
-205            android:exported="true"
-205-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:192:13-36
-206            android:screenOrientation="portrait"
-206-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:193:13-49
-207            android:windowSoftInputMode="stateAlwaysHidden" />
-207-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:194:13-60
-208        <activity
-208-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:195:9-199:63
-209            android:name="com.fruitvendorapp.activities.MyAddressActivity"
-209-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:196:13-57
-210            android:exported="true"
-210-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:197:13-36
-211            android:screenOrientation="portrait"
-211-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:198:13-49
-212            android:windowSoftInputMode="stateAlwaysHidden" />
-212-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:199:13-60
-213        <activity
-213-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:200:9-204:63
-214            android:name="com.fruitvendorapp.activities.ProductDetailActivity"
-214-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:201:13-61
-215            android:exported="true"
-215-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:202:13-36
-216            android:screenOrientation="portrait"
-216-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:203:13-49
-217            android:windowSoftInputMode="stateAlwaysHidden" />
-217-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:204:13-60
-218        <activity
-218-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:205:9-209:63
-219            android:name="com.fruitvendorapp.activities.UploadProductActivity"
-219-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:206:13-61
-220            android:exported="true"
-220-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:207:13-36
-221            android:screenOrientation="portrait"
-221-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:208:13-49
-222            android:windowSoftInputMode="stateAlwaysHidden" />
-222-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:209:13-60
-223        <activity
-223-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:210:9-214:63
-224            android:name="com.fruitvendorapp.activities.PaymentActivity"
-224-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:211:13-55
-225            android:exported="true"
-225-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:212:13-36
-226            android:screenOrientation="portrait"
-226-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:213:13-49
-227            android:windowSoftInputMode="stateAlwaysHidden" />
-227-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:214:13-60
-228        <activity
-228-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:215:9-219:63
-229            android:name="com.fruitvendorapp.activities.PickAPlanActivity"
-229-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:216:13-57
-230            android:exported="true"
-230-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:217:13-36
-231            android:screenOrientation="portrait"
-231-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:218:13-49
-232            android:windowSoftInputMode="stateAlwaysHidden" />
-232-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:219:13-60
-233        <activity
-233-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:220:9-224:63
-234            android:name="com.fruitvendorapp.activities.DashboardActivity"
-234-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:221:13-57
-235            android:exported="true"
-235-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:222:13-36
-236            android:screenOrientation="portrait"
-236-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:223:13-49
-237            android:windowSoftInputMode="stateAlwaysHidden" />
-237-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:224:13-60
-238        <activity
-238-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:225:9-229:63
-239            android:name="com.fruitvendorapp.activities.ResetPassActivity"
-239-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:226:13-57
-240            android:exported="true"
-240-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:227:13-36
-241            android:screenOrientation="portrait"
-241-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:228:13-49
-242            android:windowSoftInputMode="stateAlwaysHidden" />
-242-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:229:13-60
-243        <activity
-243-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:230:9-234:63
-244            android:name="com.fruitvendorapp.activities.ForgotPassActivity"
-244-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:231:13-58
-245            android:exported="true"
-245-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:232:13-36
-246            android:screenOrientation="portrait"
-246-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:233:13-49
-247            android:windowSoftInputMode="stateAlwaysHidden" />
-247-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:234:13-60
-248        <activity
-248-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:235:9-239:63
-249            android:name="com.fruitvendorapp.activities.OTPVerifyActivity"
-249-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:236:13-57
-250            android:exported="true"
-250-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:237:13-36
-251            android:screenOrientation="portrait"
-251-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:238:13-49
-252            android:windowSoftInputMode="stateAlwaysHidden" />
-252-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:239:13-60
-253        <activity
-253-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:240:9-244:63
-254            android:name="com.fruitvendorapp.activities.SignUpActivity"
-254-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:241:13-54
-255            android:exported="true"
-255-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:242:13-36
-256            android:screenOrientation="portrait"
-256-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:243:13-49
-257            android:windowSoftInputMode="stateAlwaysHidden" />
-257-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:244:13-60
-258        <activity
-258-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:245:9-249:63
-259            android:name="com.fruitvendorapp.activities.LoginActivity"
-259-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:246:13-53
-260            android:exported="true"
-260-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:247:13-36
-261            android:screenOrientation="portrait"
-261-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:248:13-49
-262            android:windowSoftInputMode="stateAlwaysHidden" />
-262-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:249:13-60
-263        <activity
-263-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:250:9-254:63
-264            android:name="com.fruitvendorapp.activities.WalkThroughActivity"
-264-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:251:13-59
-265            android:exported="true"
-265-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:252:13-36
-266            android:screenOrientation="portrait"
-266-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:253:13-49
-267            android:windowSoftInputMode="stateAlwaysHidden" />
-267-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:254:13-60
-268        <activity
-268-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:255:9-259:63
-269            android:name="com.fruitvendorapp.activities.PickupSlotSelectionActivity"
-269-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:256:13-67
-270            android:exported="true"
-270-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:257:13-36
-271            android:screenOrientation="portrait"
-271-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:258:13-49
-272            android:windowSoftInputMode="stateAlwaysHidden" />
-272-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:259:13-60
-273        <activity
-273-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:260:9-270:20
-274            android:name="com.fruitvendorapp.activities.SplashActivity"
-274-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:261:13-54
-275            android:exported="true"
-275-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:262:13-36
-276            android:screenOrientation="portrait"
-276-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:263:13-49
-277            android:windowSoftInputMode="stateAlwaysHidden" >
-277-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:264:13-60
-278            <intent-filter>
-278-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:265:13-269:29
-279                <action android:name="android.intent.action.MAIN" />
-279-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:266:17-69
-279-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:266:25-66
-280
-281                <category android:name="android.intent.category.LAUNCHER" />
-281-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:268:17-77
-281-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:268:27-74
-282            </intent-filter>
-283        </activity>
-284
-285        <service
-285-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:272:9-278:19
-286            android:name="com.fruitvendorapp.fcm.MyFirebaseMessagingService"
-286-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:273:13-59
-287            android:exported="true" >
-287-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:274:13-36
-288            <intent-filter>
-288-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:275:13-277:29
-289                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-289-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:17-78
-289-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:25-75
-290            </intent-filter>
-291        </service>
-292        <service
-292-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:279:9-285:19
-293            android:name="com.fruitvendorapp.fcm.MyFirebaseInstanceIdService"
-293-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:280:13-60
-294            android:exported="true" >
-294-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:281:13-36
-295            <intent-filter>
-295-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:282:13-284:29
-296                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-296-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:283:17-80
-296-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:283:25-77
-297            </intent-filter>
-298        </service>
-299
-300        <meta-data
-300-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:287:9-289:71
-301            android:name="com.google.firebase.messaging.default_notification_channel_id"
-301-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:288:13-89
-302            android:value="@string/default_notification_channel_id" />
-302-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:289:13-68
-303        <meta-data
-303-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:290:9-292:55
-304            android:name="com.google.firebase.messaging.default_notification_icon"
-304-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:291:13-83
-305            android:resource="@drawable/heart_logo" />
-305-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:292:13-52
-306        <meta-data
-306-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:293:9-295:53
-307            android:name="com.google.firebase.messaging.default_notification_color"
-307-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:294:13-84
-308            android:resource="@color/black_trans" />
-308-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:295:13-50
-309        <meta-data
-309-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:296:9-298:105
-310            android:name="io.sentry.dsn"
-310-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:297:13-41
-311            android:value="https://933c490dd5af4feb96c20ff6117aafe5@o567077.ingest.sentry.io/5710631" />
-311-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:298:13-102
-312
-313        <provider
-313-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:300:9-308:20
-314            android:name="com.fruitvendorapp.utilities.GenericFileProvider"
-314-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:301:13-58
-315            android:authorities="com.fruitvendorapp.fileprovider"
-315-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:302:13-66
-316            android:exported="false"
-316-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:303:13-37
-317            android:grantUriPermissions="true" >
-317-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:304:13-47
-318            <meta-data
-318-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:305:13-307:58
-319                android:name="android.support.FILE_PROVIDER_PATHS"
-319-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:306:17-67
-320                android:resource="@xml/external_files" />
-320-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:307:17-55
-321        </provider>
-322
-323        <receiver
-323-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:310:9-320:20
-324            android:name="com.fruitvendorapp.fcm.MySMSBroadCastReceiver"
-324-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:311:13-55
-325            android:exported="true"
-325-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:312:13-36
-326            android:permission="com.google.android.c2dm.permission.SEND" >
-326-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:313:13-73
-327            <intent-filter>
-327-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:314:13-319:29
-328                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-328-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:17-81
-328-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:25-78
-329                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-329-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:316:17-86
-329-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:316:25-83
-330
-331                <category android:name="com.fruitvendorapp.fcm" />
-331-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:318:17-67
-331-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:318:27-64
-332            </intent-filter>
-333        </receiver>
-334
-335        <activity
-335-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:322:9-325:59
-336            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-336-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:323:13-76
-337            android:exported="true"
-337-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:324:13-36
-338            android:theme="@style/Base.Theme.AppCompat" />
-338-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:325:13-56
-339        <activity
-339-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:326:9-338:20
-340            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
-340-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:327:13-84
-341            android:exported="true"
-341-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:328:13-36
-342            android:launchMode="singleTask" >
-342-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:329:13-44
-343            <intent-filter>
-343-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:330:13-337:29
-344                <action android:name="android.intent.action.VIEW" />
-344-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:331:17-69
-344-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:331:25-66
-345
-346                <category android:name="android.intent.category.DEFAULT" />
-346-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:17-76
-346-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:27-73
-347                <category android:name="android.intent.category.BROWSABLE" />
-347-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:334:17-78
-347-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:334:27-75
-348
-349                <data android:scheme="com.fruitvendorapp.braintree" />
-349-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:336:23-66
-350            </intent-filter>
-351        </activity>
-352        <activity
-352-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:18:9-20:62
-353            android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
-353-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:19:13-94
-354            android:theme="@style/bt_three_d_secure_theme" />
-354-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:20:13-59
-355        <activity
-355-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:21:9-23:64
-356            android:name="com.braintreepayments.api.dropin.DropInActivity"
-356-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:22:13-75
-357            android:theme="@style/bt_drop_in_activity_theme" />
-357-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:23:13-61
-358        <activity
-358-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:24:9-26:65
-359            android:name="com.braintreepayments.api.dropin.AddCardActivity"
-359-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:25:13-76
-360            android:theme="@style/bt_add_card_activity_theme" />
-360-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:26:13-62
-361        <activity
-361-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:27:9-29:70
-362            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
-362-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:28:13-81
-363            android:theme="@style/bt_vault_manager_activity_theme" />
-363-->[com.braintreepayments.api:drop-in:3.7.1] E:\.gradle\caches\transforms-3\bfa2bf065563d65b8cd5eebfa84e56c6\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:29:13-67
-364        <activity
-364-->[pub.devrel:easypermissions:2.0.1] E:\.gradle\caches\transforms-3\a9eab8fd5a6efa81785c767b5a768f21\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:12:9-16:66
-365            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-365-->[pub.devrel:easypermissions:2.0.1] E:\.gradle\caches\transforms-3\a9eab8fd5a6efa81785c767b5a768f21\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:13:13-86
-366            android:exported="false"
-366-->[pub.devrel:easypermissions:2.0.1] E:\.gradle\caches\transforms-3\a9eab8fd5a6efa81785c767b5a768f21\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:14:13-37
-367            android:label=""
-367-->[pub.devrel:easypermissions:2.0.1] E:\.gradle\caches\transforms-3\a9eab8fd5a6efa81785c767b5a768f21\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:15:13-29
-368            android:theme="@style/EasyPermissions.Transparent" />
-368-->[pub.devrel:easypermissions:2.0.1] E:\.gradle\caches\transforms-3\a9eab8fd5a6efa81785c767b5a768f21\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:16:13-63
-369        <activity
-369-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:15:9-18:68
-370            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
-370-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:16:13-81
-371            android:screenOrientation="unspecified"
-371-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:17:13-52
-372            android:theme="@style/Theme.Transparent.ImagePicker" />
-372-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:18:13-65
-373        <activity
-373-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:19:9-22:72
-374            android:name="com.yalantis.ucrop.UCropActivity"
-374-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:20:13-60
-375            android:screenOrientation="portrait"
-375-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:21:13-49
-376            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-376-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:22:13-69
-377
-378        <provider
-378-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:24:9-32:20
-379            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
-379-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:25:13-85
-380            android:authorities="com.fruitvendorapp.imagepicker.provider"
-380-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:26:13-72
-381            android:exported="false"
-381-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:27:13-37
-382            android:grantUriPermissions="true" >
-382-->[com.github.dhaval2404:imagepicker-support:1.7.1] E:\.gradle\caches\transforms-3\4211e927a440c99f7a1c8ac49f461b7c\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:28:13-47
-383            <meta-data
-383-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:305:13-307:58
-384                android:name="android.support.FILE_PROVIDER_PATHS"
-384-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:306:17-67
-385                android:resource="@xml/image_picker_provider_paths" />
-385-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:307:17-55
-386        </provider>
-387
-388        <activity
-388-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
-389            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-389-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
-390            android:exported="false"
-390-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
-391            android:label="@string/places_autocomplete_label"
-391-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
-392            android:theme="@style/PlacesAutocompleteOverlay"
-392-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
-393            android:windowSoftInputMode="adjustResize" >
-393-->[com.google.android.libraries.places:places:2.4.0] E:\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
-394        </activity> <!-- 'android:authorities' must be unique in the device, across all apps -->
-395        <provider
-395-->[io.sentry:sentry-android-core:4.3.0] E:\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:16:9-19:40
-396            android:name="io.sentry.android.core.SentryInitProvider"
-396-->[io.sentry:sentry-android-core:4.3.0] E:\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:17:13-69
-397            android:authorities="com.fruitvendorapp.SentryInitProvider"
-397-->[io.sentry:sentry-android-core:4.3.0] E:\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:18:13-70
-398            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
-398-->[io.sentry:sentry-android-core:4.3.0] E:\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:19:13-37
-399        <uses-library
-399-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-400            android:name="org.apache.http.legacy"
-400-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-401            android:required="false" />
-401-->[com.google.android.gms:play-services-maps:17.0.0] E:\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-402
-403        <activity
-403-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:24:9-31:50
-404            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-404-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:25:13-85
-405            android:excludeFromRecents="true"
-405-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:26:13-46
-406            android:exported="true"
-406-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:27:13-36
-407            android:launchMode="singleTask"
-407-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:28:13-44
-408            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-408-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:29:13-102
-409            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-409-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:30:13-72
-410
-411        <service
-411-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:33:9-39:19
-412            android:name="com.google.firebase.components.ComponentDiscoveryService"
-412-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:34:13-84
-413            android:directBootAware="true"
-413-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-414            android:exported="false" >
-414-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:35:13-37
-415            <meta-data
-415-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:36:13-38:85
-416                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-416-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:37:17-109
-417                android:value="com.google.firebase.components.ComponentRegistrar" />
-417-->[com.google.firebase:firebase-auth:19.1.0] E:\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:38:17-82
-418            <meta-data
-418-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
-419                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-419-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
-420                android:value="com.google.firebase.components.ComponentRegistrar" />
-420-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+59-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:47:9-35
+60        android:theme="@style/AppTheme"
+60-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:48:9-40
+61        android:usesCleartextTraffic="true" >
+61-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:49:9-44
+62        <activity
+62-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:51:9-55:63
+63            android:name="com.fruitvendorapp.activities.AddPromoCodeActivity"
+63-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:52:13-60
+64            android:exported="true"
+64-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:53:13-36
+65            android:screenOrientation="portrait"
+65-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:54:13-49
+66            android:windowSoftInputMode="stateAlwaysHidden" />
+66-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:55:13-60
+67        <activity
+67-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:56:9-60:63
+68            android:name="com.fruitvendorapp.activities.PromoCodeActivity"
+68-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:57:13-57
+69            android:exported="true"
+69-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:58:13-36
+70            android:screenOrientation="portrait"
+70-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:59:13-49
+71            android:windowSoftInputMode="stateAlwaysHidden" />
+71-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:60:13-60
+72        <activity
+72-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:61:9-65:63
+73            android:name="com.fruitvendorapp.activities.SlotSelectionActivity"
+73-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:62:13-61
+74            android:exported="true"
+74-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:63:13-36
+75            android:screenOrientation="portrait"
+75-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:64:13-49
+76            android:windowSoftInputMode="stateAlwaysHidden" />
+76-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:65:13-60
+77        <activity
+77-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:66:9-70:63
+78            android:name="com.fruitvendorapp.activities.AdditionalSettingActivity"
+78-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:67:13-65
+79            android:exported="true"
+79-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:68:13-36
+80            android:screenOrientation="portrait"
+80-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:69:13-49
+81            android:windowSoftInputMode="stateAlwaysHidden" />
+81-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:70:13-60
+82        <activity android:name="com.fruitvendorapp.activities.FAQActivity" />
+82-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:71:9-60
+82-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:71:19-57
+83        <activity
+83-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:72:9-76:63
+84            android:name="com.fruitvendorapp.activities.NotificationSettingActivity"
+84-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:73:13-67
+85            android:exported="true"
+85-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:74:13-36
+86            android:screenOrientation="portrait"
+86-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:75:13-49
+87            android:windowSoftInputMode="stateAlwaysHidden" />
+87-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:76:13-60
+88        <activity
+88-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:77:9-81:63
+89            android:name="com.fruitvendorapp.activities.TotalCompletedOrderActivity"
+89-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:78:13-67
+90            android:exported="true"
+90-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:79:13-36
+91            android:screenOrientation="portrait"
+91-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:80:13-49
+92            android:windowSoftInputMode="stateAlwaysHidden" />
+92-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:81:13-60
+93        <activity
+93-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:82:9-86:63
+94            android:name="com.fruitvendorapp.activities.TermAndConditionActivity"
+94-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:83:13-64
+95            android:exported="true"
+95-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:84:13-36
+96            android:screenOrientation="portrait"
+96-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:85:13-49
+97            android:windowSoftInputMode="stateAlwaysHidden" />
+97-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:86:13-60
+98        <activity
+98-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:87:9-91:63
+99            android:name="com.fruitvendorapp.activities.CustomerCollectionActivity"
+99-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:88:13-66
+100            android:exported="true"
+100-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:89:13-36
+101            android:screenOrientation="portrait"
+101-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:90:13-49
+102            android:windowSoftInputMode="stateAlwaysHidden" />
+102-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:91:13-60
+103        <activity
+103-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:92:9-96:63
+104            android:name="com.fruitvendorapp.activities.EditProfileActivity"
+104-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:93:13-59
+105            android:exported="true"
+105-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:94:13-36
+106            android:screenOrientation="portrait"
+106-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:95:13-49
+107            android:windowSoftInputMode="stateAlwaysHidden" />
+107-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:96:13-60
+108        <activity
+108-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:97:9-102:63
+109            android:name="com.fruitvendorapp.popups.OrderDetailDeliverPopup"
+109-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:98:13-59
+110            android:exported="true"
+110-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:99:13-36
+111            android:screenOrientation="portrait"
+111-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:100:13-49
+112            android:theme="@style/mytheme"
+112-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:101:13-43
+113            android:windowSoftInputMode="stateAlwaysHidden" />
+113-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:102:13-60
+114        <activity
+114-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:103:9-107:63
+115            android:name="com.fruitvendorapp.activities.OrderRejectionActivity"
+115-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:104:13-62
+116            android:exported="true"
+116-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:105:13-36
+117            android:screenOrientation="portrait"
+117-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:106:13-49
+118            android:windowSoftInputMode="stateAlwaysHidden" />
+118-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:107:13-60
+119        <activity
+119-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:108:9-112:63
+120            android:name="com.fruitvendorapp.activities.VideoPlayActivity"
+120-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:109:13-57
+121            android:exported="true"
+121-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:110:13-36
+122            android:screenOrientation="portrait"
+122-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:111:13-49
+123            android:windowSoftInputMode="stateAlwaysHidden" />
+123-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:112:13-60
+124        <activity
+124-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:113:9-117:63
+125            android:name="com.fruitvendorapp.activities.ChangePasswordActivity"
+125-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:114:13-62
+126            android:exported="true"
+126-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:115:13-36
+127            android:screenOrientation="portrait"
+127-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:116:13-49
+128            android:windowSoftInputMode="stateAlwaysHidden" />
+128-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:117:13-60
+129        <activity
+129-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:118:9-122:63
+130            android:name="com.fruitvendorapp.activities.ShowWebUrlActivity"
+130-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:119:13-58
+131            android:exported="true"
+131-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:120:13-36
+132            android:screenOrientation="portrait"
+132-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:121:13-49
+133            android:windowSoftInputMode="stateAlwaysHidden" />
+133-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:122:13-60
+134        <activity
+134-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:123:9-127:63
+135            android:name="com.fruitvendorapp.activities.SettingActivity"
+135-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:124:13-55
+136            android:exported="true"
+136-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:125:13-36
+137            android:screenOrientation="portrait"
+137-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:126:13-49
+138            android:windowSoftInputMode="stateAlwaysHidden" />
+138-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:127:13-60
+139        <activity
+139-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:128:9-132:63
+140            android:name="com.fruitvendorapp.activities.TrainingActivity"
+140-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:129:13-56
+141            android:exported="true"
+141-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:130:13-36
+142            android:screenOrientation="portrait"
+142-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:131:13-49
+143            android:windowSoftInputMode="stateAlwaysHidden" />
+143-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:132:13-60
+144        <activity
+144-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:133:9-137:63
+145            android:name="com.fruitvendorapp.activities.ContactActivity"
+145-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:134:13-55
+146            android:exported="true"
+146-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:135:13-36
+147            android:screenOrientation="portrait"
+147-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:136:13-49
+148            android:windowSoftInputMode="stateAlwaysHidden" />
+148-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:137:13-60
+149        <activity
+149-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:138:9-142:63
+150            android:name="com.fruitvendorapp.activities.HelpandSupportActivity"
+150-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:139:13-62
+151            android:exported="true"
+151-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:140:13-36
+152            android:screenOrientation="portrait"
+152-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:141:13-49
+153            android:windowSoftInputMode="stateAlwaysHidden" />
+153-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:142:13-60
+154        <activity
+154-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:143:9-147:63
+155            android:name="com.fruitvendorapp.activities.EditAddressActivity"
+155-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:144:13-59
+156            android:exported="true"
+156-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:145:13-36
+157            android:screenOrientation="portrait"
+157-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:146:13-49
+158            android:windowSoftInputMode="stateAlwaysHidden" />
+158-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:147:13-60
+159        <activity
+159-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:148:9-153:63
+160            android:name="com.fruitvendorapp.popups.OrderDetailPickupPopup"
+160-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:149:13-58
+161            android:exported="true"
+161-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:150:13-36
+162            android:screenOrientation="portrait"
+162-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:151:13-49
+163            android:theme="@style/mytheme"
+163-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:152:13-43
+164            android:windowSoftInputMode="stateAlwaysHidden" />
+164-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:153:13-60
+165        <activity
+165-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:154:9-158:63
+166            android:name="com.fruitvendorapp.activities.EditProductActivity"
+166-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:155:13-59
+167            android:exported="true"
+167-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:156:13-36
+168            android:screenOrientation="portrait"
+168-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:157:13-49
+169            android:windowSoftInputMode="stateAlwaysHidden" />
+169-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:158:13-60
+170        <activity
+170-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:159:9-163:63
+171            android:name="com.fruitvendorapp.activities.FilterActivity"
+171-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:160:13-54
+172            android:exported="true"
+172-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:161:13-36
+173            android:screenOrientation="portrait"
+173-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:162:13-49
+174            android:windowSoftInputMode="stateAlwaysHidden" />
+174-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:163:13-60
+175        <activity
+175-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:164:9-174:20
+176            android:name="com.fruitvendorapp.popups.OrderNotificationPopup"
+176-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:165:13-58
+177            android:exported="true"
+177-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:166:13-36
+178            android:screenOrientation="portrait"
+178-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:167:13-49
+179            android:theme="@style/mytheme"
+179-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:168:13-43
+180            android:windowSoftInputMode="stateAlwaysHidden" >
+180-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:169:13-60
+181            <intent-filter>
+181-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:170:13-173:29
+182                <action android:name="OrderNotificationPopup" />
+182-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:171:17-65
+182-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:171:25-62
+183
+184                <category android:name="android.intent.category.DEFAULT" />
+184-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:17-76
+184-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:27-73
+185            </intent-filter>
+186        </activity>
+187        <activity
+187-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:175:9-179:63
+188            android:name="com.fruitvendorapp.activities.OrdersActivity"
+188-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:176:13-54
+189            android:exported="true"
+189-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:177:13-36
+190            android:screenOrientation="portrait"
+190-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:178:13-49
+191            android:windowSoftInputMode="stateAlwaysHidden" />
+191-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:179:13-60
+192        <activity
+192-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:180:9-184:63
+193            android:name="com.fruitvendorapp.activities.ProfileSettingActivity"
+193-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:181:13-62
+194            android:exported="true"
+194-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:182:13-36
+195            android:screenOrientation="portrait"
+195-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:183:13-49
+196            android:windowSoftInputMode="stateAlwaysHidden" />
+196-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:184:13-60
+197        <activity
+197-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:185:9-189:63
+198            android:name="com.fruitvendorapp.activities.NotificationActivity"
+198-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:186:13-60
+199            android:exported="true"
+199-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:187:13-36
+200            android:screenOrientation="portrait"
+200-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:188:13-49
+201            android:windowSoftInputMode="stateAlwaysHidden" />
+201-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:189:13-60
+202        <activity
+202-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:190:9-194:63
+203            android:name="com.fruitvendorapp.activities.ReferAFriendActivity"
+203-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:191:13-60
+204            android:exported="true"
+204-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:192:13-36
+205            android:screenOrientation="portrait"
+205-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:193:13-49
+206            android:windowSoftInputMode="stateAlwaysHidden" />
+206-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:194:13-60
+207        <activity
+207-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:195:9-199:63
+208            android:name="com.fruitvendorapp.activities.MyAddressActivity"
+208-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:196:13-57
+209            android:exported="true"
+209-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:197:13-36
+210            android:screenOrientation="portrait"
+210-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:198:13-49
+211            android:windowSoftInputMode="stateAlwaysHidden" />
+211-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:199:13-60
+212        <activity
+212-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:200:9-204:63
+213            android:name="com.fruitvendorapp.activities.ProductDetailActivity"
+213-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:201:13-61
+214            android:exported="true"
+214-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:202:13-36
+215            android:screenOrientation="portrait"
+215-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:203:13-49
+216            android:windowSoftInputMode="stateAlwaysHidden" />
+216-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:204:13-60
+217        <activity
+217-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:205:9-209:63
+218            android:name="com.fruitvendorapp.activities.UploadProductActivity"
+218-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:206:13-61
+219            android:exported="true"
+219-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:207:13-36
+220            android:screenOrientation="portrait"
+220-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:208:13-49
+221            android:windowSoftInputMode="stateAlwaysHidden" />
+221-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:209:13-60
+222        <activity
+222-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:210:9-214:63
+223            android:name="com.fruitvendorapp.activities.PaymentActivity"
+223-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:211:13-55
+224            android:exported="true"
+224-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:212:13-36
+225            android:screenOrientation="portrait"
+225-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:213:13-49
+226            android:windowSoftInputMode="stateAlwaysHidden" />
+226-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:214:13-60
+227        <activity
+227-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:215:9-219:63
+228            android:name="com.fruitvendorapp.activities.PickAPlanActivity"
+228-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:216:13-57
+229            android:exported="true"
+229-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:217:13-36
+230            android:screenOrientation="portrait"
+230-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:218:13-49
+231            android:windowSoftInputMode="stateAlwaysHidden" />
+231-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:219:13-60
+232        <activity
+232-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:220:9-224:63
+233            android:name="com.fruitvendorapp.activities.DashboardActivity"
+233-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:221:13-57
+234            android:exported="true"
+234-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:222:13-36
+235            android:screenOrientation="portrait"
+235-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:223:13-49
+236            android:windowSoftInputMode="stateAlwaysHidden" />
+236-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:224:13-60
+237        <activity
+237-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:225:9-229:63
+238            android:name="com.fruitvendorapp.activities.ResetPassActivity"
+238-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:226:13-57
+239            android:exported="true"
+239-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:227:13-36
+240            android:screenOrientation="portrait"
+240-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:228:13-49
+241            android:windowSoftInputMode="stateAlwaysHidden" />
+241-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:229:13-60
+242        <activity
+242-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:230:9-234:63
+243            android:name="com.fruitvendorapp.activities.ForgotPassActivity"
+243-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:231:13-58
+244            android:exported="true"
+244-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:232:13-36
+245            android:screenOrientation="portrait"
+245-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:233:13-49
+246            android:windowSoftInputMode="stateAlwaysHidden" />
+246-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:234:13-60
+247        <activity
+247-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:235:9-239:63
+248            android:name="com.fruitvendorapp.activities.OTPVerifyActivity"
+248-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:236:13-57
+249            android:exported="true"
+249-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:237:13-36
+250            android:screenOrientation="portrait"
+250-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:238:13-49
+251            android:windowSoftInputMode="stateAlwaysHidden" />
+251-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:239:13-60
+252        <activity
+252-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:240:9-244:63
+253            android:name="com.fruitvendorapp.activities.SignUpActivity"
+253-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:241:13-54
+254            android:exported="true"
+254-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:242:13-36
+255            android:screenOrientation="portrait"
+255-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:243:13-49
+256            android:windowSoftInputMode="stateAlwaysHidden" />
+256-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:244:13-60
+257        <activity
+257-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:245:9-249:63
+258            android:name="com.fruitvendorapp.activities.LoginActivity"
+258-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:246:13-53
+259            android:exported="true"
+259-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:247:13-36
+260            android:screenOrientation="portrait"
+260-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:248:13-49
+261            android:windowSoftInputMode="stateAlwaysHidden" />
+261-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:249:13-60
+262        <activity
+262-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:250:9-254:63
+263            android:name="com.fruitvendorapp.activities.WalkThroughActivity"
+263-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:251:13-59
+264            android:exported="true"
+264-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:252:13-36
+265            android:screenOrientation="portrait"
+265-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:253:13-49
+266            android:windowSoftInputMode="stateAlwaysHidden" />
+266-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:254:13-60
+267        <activity
+267-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:255:9-259:63
+268            android:name="com.fruitvendorapp.activities.PickupSlotSelectionActivity"
+268-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:256:13-67
+269            android:exported="true"
+269-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:257:13-36
+270            android:screenOrientation="portrait"
+270-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:258:13-49
+271            android:windowSoftInputMode="stateAlwaysHidden" />
+271-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:259:13-60
+272        <activity
+272-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:260:9-270:20
+273            android:name="com.fruitvendorapp.activities.SplashActivity"
+273-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:261:13-54
+274            android:exported="true"
+274-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:262:13-36
+275            android:screenOrientation="portrait"
+275-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:263:13-49
+276            android:windowSoftInputMode="stateAlwaysHidden" >
+276-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:264:13-60
+277            <intent-filter>
+277-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:265:13-269:29
+278                <action android:name="android.intent.action.MAIN" />
+278-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:266:17-69
+278-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:266:25-66
+279
+280                <category android:name="android.intent.category.LAUNCHER" />
+280-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:268:17-77
+280-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:268:27-74
+281            </intent-filter>
+282        </activity>
+283
+284        <service
+284-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:272:9-278:19
+285            android:name="com.fruitvendorapp.fcm.MyFirebaseMessagingService"
+285-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:273:13-59
+286            android:exported="true" >
+286-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:274:13-36
+287            <intent-filter>
+287-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:275:13-277:29
+288                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+288-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:17-78
+288-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:25-75
+289            </intent-filter>
+290        </service>
+291        <service
+291-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:279:9-285:19
+292            android:name="com.fruitvendorapp.fcm.MyFirebaseInstanceIdService"
+292-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:280:13-60
+293            android:exported="true" >
+293-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:281:13-36
+294            <intent-filter>
+294-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:282:13-284:29
+295                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+295-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:283:17-80
+295-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:283:25-77
+296            </intent-filter>
+297        </service>
+298
+299        <meta-data
+299-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:287:9-289:71
+300            android:name="com.google.firebase.messaging.default_notification_channel_id"
+300-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:288:13-89
+301            android:value="@string/default_notification_channel_id" />
+301-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:289:13-68
+302        <meta-data
+302-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:290:9-292:55
+303            android:name="com.google.firebase.messaging.default_notification_icon"
+303-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:291:13-83
+304            android:resource="@drawable/heart_logo" />
+304-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:292:13-52
+305        <meta-data
+305-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:293:9-295:53
+306            android:name="com.google.firebase.messaging.default_notification_color"
+306-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:294:13-84
+307            android:resource="@color/black_trans" />
+307-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:295:13-50
+308        <meta-data
+308-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:296:9-298:105
+309            android:name="io.sentry.dsn"
+309-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:297:13-41
+310            android:value="https://933c490dd5af4feb96c20ff6117aafe5@o567077.ingest.sentry.io/5710631" />
+310-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:298:13-102
+311
+312        <provider
+312-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:300:9-308:20
+313            android:name="com.fruitvendorapp.utilities.GenericFileProvider"
+313-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:301:13-58
+314            android:authorities="com.fruitvendorapp.fileprovider"
+314-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:302:13-66
+315            android:exported="false"
+315-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:303:13-37
+316            android:grantUriPermissions="true" >
+316-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:304:13-47
+317            <meta-data
+317-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:305:13-307:58
+318                android:name="android.support.FILE_PROVIDER_PATHS"
+318-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:306:17-67
+319                android:resource="@xml/external_files" />
+319-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:307:17-55
+320        </provider>
+321
+322        <receiver
+322-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:310:9-320:20
+323            android:name="com.fruitvendorapp.fcm.MySMSBroadCastReceiver"
+323-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:311:13-55
+324            android:exported="true"
+324-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:312:13-36
+325            android:permission="com.google.android.c2dm.permission.SEND" >
+325-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:313:13-73
+326            <intent-filter>
+326-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:314:13-319:29
+327                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+327-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:17-81
+327-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:25-78
+328                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+328-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:316:17-86
+328-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:316:25-83
+329
+330                <category android:name="com.fruitvendorapp.fcm" />
+330-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:318:17-67
+330-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:318:27-64
+331            </intent-filter>
+332        </receiver>
+333
+334        <activity
+334-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:322:9-325:59
+335            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+335-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:323:13-76
+336            android:exported="true"
+336-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:324:13-36
+337            android:theme="@style/Base.Theme.AppCompat" />
+337-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:325:13-56
+338        <activity
+338-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:326:9-338:20
+339            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+339-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:327:13-84
+340            android:exported="true"
+340-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:328:13-36
+341            android:launchMode="singleTask" >
+341-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:329:13-44
+342            <intent-filter>
+342-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:330:13-337:29
+343                <action android:name="android.intent.action.VIEW" />
+343-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:331:17-69
+343-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:331:25-66
+344
+345                <category android:name="android.intent.category.DEFAULT" />
+345-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:17-76
+345-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:172:27-73
+346                <category android:name="android.intent.category.BROWSABLE" />
+346-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:334:17-78
+346-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:334:27-75
+347
+348                <data android:scheme="com.fruitvendorapp.braintree" />
+348-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:336:23-66
+349            </intent-filter>
+350        </activity>
+351        <activity
+351-->[pub.devrel:easypermissions:2.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\259f3be14efc85dff63e5b388b038ccd\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:12:9-16:66
+352            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+352-->[pub.devrel:easypermissions:2.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\259f3be14efc85dff63e5b388b038ccd\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:13:13-86
+353            android:exported="false"
+353-->[pub.devrel:easypermissions:2.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\259f3be14efc85dff63e5b388b038ccd\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:14:13-37
+354            android:label=""
+354-->[pub.devrel:easypermissions:2.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\259f3be14efc85dff63e5b388b038ccd\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:15:13-29
+355            android:theme="@style/EasyPermissions.Transparent" />
+355-->[pub.devrel:easypermissions:2.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\259f3be14efc85dff63e5b388b038ccd\transformed\jetified-easypermissions-2.0.1\AndroidManifest.xml:16:13-63
+356        <activity
+356-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:15:9-18:68
+357            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
+357-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:16:13-81
+358            android:screenOrientation="unspecified"
+358-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:17:13-52
+359            android:theme="@style/Theme.Transparent.ImagePicker" />
+359-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:18:13-65
+360        <activity
+360-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:19:9-22:72
+361            android:name="com.yalantis.ucrop.UCropActivity"
+361-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:20:13-60
+362            android:screenOrientation="portrait"
+362-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:21:13-49
+363            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+363-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:22:13-69
+364
+365        <provider
+365-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:24:9-32:20
+366            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
+366-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:25:13-85
+367            android:authorities="com.fruitvendorapp.imagepicker.provider"
+367-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:26:13-72
+368            android:exported="false"
+368-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:27:13-37
+369            android:grantUriPermissions="true" >
+369-->[com.github.dhaval2404:imagepicker-support:1.7.1] C:\Users\SIMEC\.gradle\caches\transforms-3\0b972906f7cbf0d70dffe8d64d92debf\transformed\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:28:13-47
+370            <meta-data
+370-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:305:13-307:58
+371                android:name="android.support.FILE_PROVIDER_PATHS"
+371-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:306:17-67
+372                android:resource="@xml/image_picker_provider_paths" />
+372-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:307:17-55
+373        </provider>
+374
+375        <activity
+375-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
+376            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+376-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
+377            android:exported="false"
+377-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
+378            android:label="@string/places_autocomplete_label"
+378-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
+379            android:theme="@style/PlacesAutocompleteOverlay"
+379-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
+380            android:windowSoftInputMode="adjustResize" >
+380-->[com.google.android.libraries.places:places:2.4.0] C:\Users\SIMEC\.gradle\caches\transforms-3\5efbd2f6314ed93c1bb5b31d73c72add\transformed\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
+381        </activity> <!-- 'android:authorities' must be unique in the device, across all apps -->
+382        <provider
+382-->[io.sentry:sentry-android-core:4.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:16:9-19:40
+383            android:name="io.sentry.android.core.SentryInitProvider"
+383-->[io.sentry:sentry-android-core:4.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:17:13-69
+384            android:authorities="com.fruitvendorapp.SentryInitProvider"
+384-->[io.sentry:sentry-android-core:4.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:18:13-70
+385            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+385-->[io.sentry:sentry-android-core:4.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\e255ec9ba4418a2ad7f7af2068f10d02\transformed\jetified-sentry-android-core-4.3.0\AndroidManifest.xml:19:13-37
+386        <uses-library
+386-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+387            android:name="org.apache.http.legacy"
+387-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+388            android:required="false" />
+388-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\SIMEC\.gradle\caches\transforms-3\1d2e08bbcd83c11c3f4f707e0345244d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+389
+390        <activity
+390-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:24:9-31:50
+391            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+391-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:25:13-85
+392            android:excludeFromRecents="true"
+392-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:26:13-46
+393            android:exported="true"
+393-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:27:13-36
+394            android:launchMode="singleTask"
+394-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:28:13-44
+395            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+395-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:29:13-102
+396            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+396-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:30:13-72
+397
+398        <service
+398-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:33:9-39:19
+399            android:name="com.google.firebase.components.ComponentDiscoveryService"
+399-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:34:13-84
+400            android:directBootAware="true"
+400-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+401            android:exported="false" >
+401-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:35:13-37
+402            <meta-data
+402-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:36:13-38:85
+403                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+403-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:37:17-109
+404                android:value="com.google.firebase.components.ComponentRegistrar" />
+404-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\SIMEC\.gradle\caches\transforms-3\011a195826b1faebeda96aaae8f6c149\transformed\jetified-firebase-auth-19.1.0\AndroidManifest.xml:38:17-82
+405            <meta-data
+405-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+406                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+406-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
+407                android:value="com.google.firebase.components.ComponentRegistrar" />
+407-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+408            <meta-data
+408-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+409                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+409-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+410                android:value="com.google.firebase.components.ComponentRegistrar" />
+410-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+411            <meta-data
+411-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\SIMEC\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+412                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+412-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\SIMEC\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+413                android:value="com.google.firebase.components.ComponentRegistrar" />
+413-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\SIMEC\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+414            <meta-data
+414-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\SIMEC\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+415                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+415-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\SIMEC\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+416                android:value="com.google.firebase.components.ComponentRegistrar" />
+416-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\SIMEC\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+417            <!--
+418                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+419                clients to use it as well, by defining this registrar in their own core/common library.
+420            -->
 421            <meta-data
-421-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
-422                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-422-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+421-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+422                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+422-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
 423                android:value="com.google.firebase.components.ComponentRegistrar" />
-423-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
-424            <meta-data
-424-->[com.google.firebase:firebase-datatransport:17.0.10] E:\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
-425                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-425-->[com.google.firebase:firebase-datatransport:17.0.10] E:\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
-426                android:value="com.google.firebase.components.ComponentRegistrar" />
-426-->[com.google.firebase:firebase-datatransport:17.0.10] E:\.gradle\caches\transforms-3\aa7f53e262c4d834a7a6e1e103d7815d\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
-427            <meta-data
-427-->[com.google.firebase:firebase-installations:16.3.5] E:\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
-428                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-428-->[com.google.firebase:firebase-installations:16.3.5] E:\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
-429                android:value="com.google.firebase.components.ComponentRegistrar" />
-429-->[com.google.firebase:firebase-installations:16.3.5] E:\.gradle\caches\transforms-3\10f4b8b77ed4cf75b303f41c0053f716\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
-430            <!--
-431                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-432                clients to use it as well, by defining this registrar in their own core/common library.
-433            -->
-434            <meta-data
-434-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-435                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-435-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-436                android:value="com.google.firebase.components.ComponentRegistrar" />
-436-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-437        </service>
-438        <!--
-439             FirebaseMessagingService performs security checks at runtime,
-440             but set to not exported to explicitly avoid allowing another app to call it.
-441        -->
-442        <service
-442-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
-443            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-443-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
-444            android:directBootAware="true"
-444-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
-445            android:exported="false" >
-445-->[com.google.firebase:firebase-messaging:21.0.1] E:\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
-446            <intent-filter android:priority="-500" >
-446-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:275:13-277:29
-447                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-447-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:17-78
-447-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:25-75
-448            </intent-filter>
-449        </service>
-450
-451        <receiver
-451-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
-452            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-452-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
-453            android:exported="true"
-453-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
-454            android:permission="com.google.android.c2dm.permission.SEND" >
-454-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
-455            <intent-filter>
-455-->[com.google.firebase:firebase-iid:21.0.1] E:\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
-456                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-456-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:17-81
-456-->C:\Users\Null-_-\Desktop\lovfreshBusiness-dev\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:25-78
-457            </intent-filter>
-458        </receiver>
-459
-460        <activity
-460-->[com.google.android.gms:play-services-base:17.3.0] E:\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
-461            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-461-->[com.google.android.gms:play-services-base:17.3.0] E:\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
-462            android:exported="false"
-462-->[com.google.android.gms:play-services-base:17.3.0] E:\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
-463            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-463-->[com.google.android.gms:play-services-base:17.3.0] E:\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
-464
-465        <provider
-465-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
-466            android:name="com.google.firebase.provider.FirebaseInitProvider"
-466-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-467            android:authorities="com.fruitvendorapp.firebaseinitprovider"
-467-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
-468            android:directBootAware="true"
-468-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
-469            android:exported="false"
-469-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
-470            android:initOrder="100" />
-470-->[com.google.firebase:firebase-common:19.5.0] E:\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
-471
-472        <meta-data
-472-->[com.google.android.gms:play-services-basement:17.3.0] E:\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
-473            android:name="com.google.android.gms.version"
-473-->[com.google.android.gms:play-services-basement:17.3.0] E:\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
-474            android:value="@integer/google_play_services_version" />
-474-->[com.google.android.gms:play-services-basement:17.3.0] E:\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
-475
-476        <activity
-476-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:15:9-17:62
-477            android:name="com.braintreepayments.api.AndroidPayActivity"
-477-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:16:13-72
-478            android:theme="@style/bt_transparent_activity" />
-478-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:17:13-59
-479        <activity
-479-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:18:9-20:62
-480            android:name="com.braintreepayments.api.GooglePaymentActivity"
-480-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:19:13-75
-481            android:theme="@style/bt_transparent_activity" />
-481-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:20:13-59
-482
-483        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
-483-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:23:9-93
-483-->[com.braintreepayments.api:braintree:2.18.1] E:\.gradle\caches\transforms-3\8c6d1c606f6d3f194182f1e2a418580d\transformed\jetified-braintree-2.18.1\AndroidManifest.xml:23:18-90
-484
-485        <provider
-485-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:26:9-34:20
-486            android:name="androidx.startup.InitializationProvider"
-486-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:27:13-67
-487            android:authorities="com.fruitvendorapp.androidx-startup"
-487-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:28:13-68
-488            android:exported="false" >
-488-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:29:13-37
-489            <meta-data
-489-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:31:13-33:52
-490                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-490-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:32:17-75
-491                android:value="androidx.startup" />
-491-->[androidx.emoji2:emoji2:1.0.0-alpha03] E:\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:33:17-49
-492            <meta-data
-492-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] E:\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:31:13-33:52
-493                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-493-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] E:\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:32:17-78
-494                android:value="androidx.startup" />
-494-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] E:\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:33:17-49
-495        </provider>
-496
-497        <service
-497-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-498            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-498-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-499            android:exported="false" >
-499-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-500            <meta-data
-500-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-501                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-501-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-502                android:value="cct" />
-502-->[com.google.android.datatransport:transport-backend-cct:2.3.3] E:\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-503        </service>
-504        <service
-504-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
-505            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-505-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
-506            android:exported="false"
-506-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
-507            android:permission="android.permission.BIND_JOB_SERVICE" >
-507-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
-508        </service>
-509
-510        <receiver
-510-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
-511            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-511-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
-512            android:exported="false" />
-512-->[com.google.android.datatransport:transport-runtime:2.2.5] E:\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
-513    </application>
-514
-515</manifest>
+423-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+424        </service>
+425        <!--
+426             FirebaseMessagingService performs security checks at runtime,
+427             but set to not exported to explicitly avoid allowing another app to call it.
+428        -->
+429        <service
+429-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+430            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+430-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+431            android:directBootAware="true"
+431-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+432            android:exported="false" >
+432-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\e6545c856bb34cc461b593176f44921a\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+433            <intent-filter android:priority="-500" >
+433-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:275:13-277:29
+434                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+434-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:17-78
+434-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:276:25-75
+435            </intent-filter>
+436        </service>
+437
+438        <receiver
+438-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+439            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+439-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+440            android:exported="true"
+440-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+441            android:permission="com.google.android.c2dm.permission.SEND" >
+441-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+442            <intent-filter>
+442-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\SIMEC\.gradle\caches\transforms-3\ea3e003f9c5dd28d8d3ae7c52d3cdc1e\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+443                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+443-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:17-81
+443-->C:\Users\SIMEC\AndroidStudioProjects\DinDinn\lovfreshBusiness-OLD\app\src\main\AndroidManifest.xml:315:25-78
+444            </intent-filter>
+445        </receiver>
+446
+447        <activity
+447-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+448            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+448-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+449            android:exported="false"
+449-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+450            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+450-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\354c22f19628f6c7e8c77a34223aa7df\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+451
+452        <provider
+452-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+453            android:name="com.google.firebase.provider.FirebaseInitProvider"
+453-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+454            android:authorities="com.fruitvendorapp.firebaseinitprovider"
+454-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+455            android:directBootAware="true"
+455-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+456            android:exported="false"
+456-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+457            android:initOrder="100" />
+457-->[com.google.firebase:firebase-common:19.5.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8c5c1e58ac9682e1fa2b1a5ce3b09a10\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+458
+459        <meta-data
+459-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+460            android:name="com.google.android.gms.version"
+460-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+461            android:value="@integer/google_play_services_version" />
+461-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\SIMEC\.gradle\caches\transforms-3\8cef994e40aba8317bcfae94feb73e12\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+462
+463        <provider
+463-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:26:9-34:20
+464            android:name="androidx.startup.InitializationProvider"
+464-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:27:13-67
+465            android:authorities="com.fruitvendorapp.androidx-startup"
+465-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:28:13-68
+466            android:exported="false" >
+466-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:29:13-37
+467            <meta-data
+467-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:31:13-33:52
+468                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+468-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:32:17-75
+469                android:value="androidx.startup" />
+469-->[androidx.emoji2:emoji2:1.0.0-alpha03] C:\Users\SIMEC\.gradle\caches\transforms-3\987c1f01258db0a3610b9600ff0bb994\transformed\jetified-emoji2-1.0.0-alpha03\AndroidManifest.xml:33:17-49
+470            <meta-data
+470-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] C:\Users\SIMEC\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:31:13-33:52
+471                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+471-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] C:\Users\SIMEC\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:32:17-78
+472                android:value="androidx.startup" />
+472-->[androidx.lifecycle:lifecycle-process:2.4.0-alpha02] C:\Users\SIMEC\.gradle\caches\transforms-3\e4bb6088db54efb53d406bf855409969\transformed\jetified-lifecycle-process-2.4.0-alpha02\AndroidManifest.xml:33:17-49
+473        </provider>
+474
+475        <service
+475-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+476            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+476-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+477            android:exported="false" >
+477-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+478            <meta-data
+478-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+479                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+479-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+480                android:value="cct" />
+480-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SIMEC\.gradle\caches\transforms-3\68b073b82eb2806fe71ac8c1649ee32d\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+481        </service>
+482        <service
+482-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+483            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+483-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+484            android:exported="false"
+484-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+485            android:permission="android.permission.BIND_JOB_SERVICE" >
+485-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+486        </service>
+487
+488        <receiver
+488-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+489            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+489-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+490            android:exported="false" />
+490-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\SIMEC\.gradle\caches\transforms-3\0d44122a64b53ae0ff957984bfff62fa\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+491    </application>
+492
+493</manifest>

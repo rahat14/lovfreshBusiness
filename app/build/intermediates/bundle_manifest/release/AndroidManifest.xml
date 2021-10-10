@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fruitvendorapp"
-    android:versionCode="105"
-    android:versionName="1.1.106" >
+    android:versionCode="106"
+    android:versionName="1.1.2" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -348,18 +348,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
-            android:theme="@style/bt_three_d_secure_theme" />
-        <activity
-            android:name="com.braintreepayments.api.dropin.DropInActivity"
-            android:theme="@style/bt_drop_in_activity_theme" />
-        <activity
-            android:name="com.braintreepayments.api.dropin.AddCardActivity"
-            android:theme="@style/bt_add_card_activity_theme" />
-        <activity
-            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
-            android:theme="@style/bt_vault_manager_activity_theme" />
-        <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"
             android:label=""
@@ -470,15 +458,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity
-            android:name="com.braintreepayments.api.AndroidPayActivity"
-            android:theme="@style/bt_transparent_activity" />
-        <activity
-            android:name="com.braintreepayments.api.GooglePaymentActivity"
-            android:theme="@style/bt_transparent_activity" />
-
-        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
