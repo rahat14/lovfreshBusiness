@@ -6,3 +6,4 @@
 *.lock
 *.dex
 *.jar
+app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
